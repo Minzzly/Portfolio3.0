@@ -6,18 +6,7 @@
         @media screen and (max-width: $breakpoint-md) {
             margin-top: 20%;
         }
-        .parallelogram__info__general {
-            background-image: url(../../assets/images/aPropos/affiche1Desktop.gif);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
 
-            margin: auto;
-            width: 90vw;
-            height: 90vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
             @media screen and (max-width: $breakpoint-md) {
                 height: 50%;
@@ -30,32 +19,18 @@
 
             .contenuGeneral {
                 width: 87vw;
-                margin-top: -2.3%;
+                margin-top: 7%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
 
-                @media screen and (max-width: $breakpoint-lg) {
-                    width: 97%;
-                }
+                .photoProfil {
+                    position:relative;
 
-                @media screen and (max-width: $breakpoint-sm) {
-                    width: 100%;
-                    height: 85%;
-                    margin-top: -15%;
-
-                    flex-direction: column;
-                    justify-content: flex-start;
-                }
-
-                @media screen and (max-width: 425px) {
-                    width: 85%;
-                    height: 85%;
-                    margin-top: 2vh;
-                }
-
-                .photoPortfolio {
-                    width: 30%;
+                    background-color:var(--color-white);
+                    border-radius: 20px;
+                    border:var(--color-secondary) 5px solid;
+                    width: 35%;
 
                     @media screen and (max-width: $breakpoint-sm) {
                         display: none;
@@ -64,99 +39,35 @@
                     @media screen and (min-width: 1921px) {
                         width: 95%;
                     }
-                }
 
-                .photoPortfolio--responsive {
-                    display: none;
-
-                    @media screen and (max-width: $breakpoint-sm) {
+                    .photoPortfolio{
                         display: block;
-
-                        // width: 50%;
-                        height: 57%;
-                        margin: -1vh 0 0 -2.3%;
+                        margin:var(--spacing-xs) auto;
+                        width:95%;
+                        border-radius: 15px;
+                        border:var(--color-secondary) 5px solid;
                     }
-
-                    @media screen and (max-width: 425px) {
-                        height: 43vh;
-                        margin: -5vh 0 0 -5%;
-                    }
-
-                    @media screen and (max-width: $breakpoint-xs) {
-                        height: 40vh;
-
-                        margin: -1vh 0 0 -5%;
-                    }
+                    
+                    .decoPhoto{
+                    position:absolute;
+                    bottom:-4%;
+                    right:-10%;
                 }
+                }
+                
                 .contenuGeneral__text {
-                    margin-top: 8%;
-                    padding: 0 8% 0 5%;
+                    width:60%;
                     display: flex;
-                    align-items: center;
                     justify-content: center;
                     flex-direction: column;
 
-                    @media screen and (max-width: $breakpoint-md) {
-                        margin-top: 12%;
-                        padding: 0 5% 0 3%;
-                    }
-
-                    @media screen and (max-width: $breakpoint-sm) {
-                        width: 60%;
-
-                        margin-top: 0;
-                    }
-
-                    @media screen and (max-width: 425px) {
-                        width: 95%;
-                    }
-
-                    h2 {
-                        background-image: url(../../assets/images/aPropos/sousTitreBleu.png);
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        text-align: center;
-                        font-family: var(--font-primary);
-                        font-size: var(--font-size-h4);
-                        color: var(--color-white);
-
-                        width: 100%;
-                        height: 73px;
-                        padding: 2.5% 3% 0 0;
-
-                        @media screen and (max-width: $breakpoint-lg) {
-                            padding: 3% 4% 0 0;
-                        }
-
-                        @media screen and (max-width: $breakpoint-md) {
-                            font-size: var(--font-size-h4-responsive);
-                            padding: 4.3% 4% 0 0;
-                        }
-
-                        @media screen and (max-width: $breakpoint-sm) {
-                            font-size: var(--font-size-content-responsive);
-
-                            height: 40px;
-                            padding: 4% 4% 0 0;
-                        }
-
-                        @media screen and (max-width: 425px) {
-                            padding: 5% 4% 0 0;
-                            font-size: var(--font-size-content-mobile);
-                        }
-
-                        @media screen and (max-width: $breakpoint-xs) {
-                            font-size: var(--font-size-infocard);
-                            padding: 6% 4% 0 0;
-                        }
+                    h1, h2{
+                        text-align: left;
                     }
 
                     p {
-                        width: 100%;
                         span {
                             font-family: var(--font-primary);
-                            color: var(--color-primary);
                             font-weight: var(--fw-bold);
                         }
                         .nom__aPropos {
@@ -195,34 +106,25 @@
                         flex-wrap: wrap;
                         list-style-type: none;
 
-                        @media screen and (max-width: $breakpoint-md) {
-                            margin-top: 0;
-                        }
+                        padding:0;
 
-                        @media screen and (max-width: $breakpoint-sm) {
-                            padding: 0;
-                        }
                         li {
-                            font-family: var(--font-primary);
+                            font-family: var(--font-secondary);
+                            font-weight: var(--fw-bold);
                             width: 49%;
                             padding-bottom: 2%;
 
                             &::before {
                                 content: '';
                                 display: inline-block;
-                                height: 35px;
-                                width: 35px;
-                                background-image: url(../../assets/images/bullets.png);
-                                background-size: contain;
+                                height: 25px;
+                                width: 21px;
+                                margin-right:var(--spacing-sm);
 
-                                @media screen and (max-width: $breakpoint-lg) {
-                                    height: 20px;
-                                    width: 20px;
-                                }
-                                @media screen and (max-width: $breakpoint-xs) {
-                                    height: 10px;
-                                    width: 10px;
-                                }
+                                background-image: url(../../assets/images/decorations/bullet.png);
+                                background-size: contain;
+                                background-repeat:no-repeat ;
+                                background-position: center;
                             }
 
                             @media screen and (max-width: $breakpoint-lg) {
@@ -240,87 +142,7 @@
                     }
                 }
             }
-        }
-        .trapeze_bonjour {
-            position: absolute;
-            top: 0;
-            left: 0;
-
-            background-image: url(../../assets/images/aPropos/backgroundBonjour.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-
-            width: 100%;
-            height: 150px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            @media screen and (max-width: $breakpoint-lg) {
-                top: 4vh;
-            }
-
-            @media screen and (max-width: $breakpoint-md) {
-                top: -4%;
-            }
-
-            @media screen and (max-width: $breakpoint-sm) {
-                width: 50%;
-                height: 60px;
-
-                top: 14%;
-                left: 8%;
-            }
-
-            @media screen and (max-width: 425px) {
-                top: 13%;
-            }
-
-            h1 {
-                font-size: var(--font-size-h2);
-                color: var(--color-white);
-
-                @media screen and (max-width: $breakpoint-sm) {
-                    font-size: var(--font-size-h4-mobile);
-                }
-            }
-        }
-
-        .fleche__scroll {
-            position: absolute;
-            top: 13%;
-            right: 0;
-            display: flex;
-            justify-content: flex-end;
-
-            background-image: url(../../assets/images/aPropos/FlecheScroll1.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-
-            width: 25vw;
-            height: 45vh;
-
-            @media screen and (max-width: $breakpoint-md) {
-                top: 225px;
-                width: 20vw;
-                height: 40vh;
-            }
-
-            @media screen and (max-width: $breakpoint-sm) {
-                width: 30vw;
-
-                top: 580px;
-                right: 100px;
-            }
-
-            @media screen and (max-width: 425px) {
-                display: none;
-            }
-        }
     }
-
     // ------------------------SECTION 2-----------------------------
 
     .peuxFaire {
@@ -381,9 +203,7 @@
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: contain;
-
-                    text-align: center;
-
+                    
                     width: 100%;
                     height: 73px;
 
