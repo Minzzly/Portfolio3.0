@@ -1,0 +1,1018 @@
+.aPropos {
+    // ------------------------SECTION 1-----------------------------
+    .infoGeneral {
+        margin-top: 7%;
+
+        @media screen and (max-width: $breakpoint-md) {
+            margin-top: 20%;
+        }
+        .parallelogram__info__general {
+            background-image: url(../../assets/images/aPropos/affiche1Desktop.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+
+            margin: auto;
+            width: 90vw;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width: $breakpoint-md) {
+                height: 50%;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                background-image: url(../../assets/images/aPropos/affiche1_responsive.png);
+                height: 90vh;
+            }
+
+            .contenuGeneral {
+                width: 87vw;
+                margin-top: -2.3%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    width: 97%;
+                }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 100%;
+                    height: 85%;
+                    margin-top: -15%;
+
+                    flex-direction: column;
+                    justify-content: flex-start;
+                }
+
+                @media screen and (max-width: 425px) {
+                    width: 85%;
+                    height: 85%;
+                    margin-top: 2vh;
+                }
+
+                .photoPortfolio {
+                    width: 30%;
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        display: none;
+                    }
+
+                    @media screen and (min-width: 1921px) {
+                        width: 95%;
+                    }
+                }
+
+                .photoPortfolio--responsive {
+                    display: none;
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        display: block;
+
+                        // width: 50%;
+                        height: 57%;
+                        margin: -1vh 0 0 -2.3%;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        height: 43vh;
+                        margin: -5vh 0 0 -5%;
+                    }
+
+                    @media screen and (max-width: $breakpoint-xs) {
+                        height: 40vh;
+
+                        margin: -1vh 0 0 -5%;
+                    }
+                }
+                .contenuGeneral__text {
+                    margin-top: 8%;
+                    padding: 0 8% 0 5%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        margin-top: 12%;
+                        padding: 0 5% 0 3%;
+                    }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        width: 60%;
+
+                        margin-top: 0;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        width: 95%;
+                    }
+
+                    h2 {
+                        background-image: url(../../assets/images/aPropos/sousTitreBleu.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        text-align: center;
+                        font-family: var(--font-primary);
+                        font-size: var(--font-size-h4);
+                        color: var(--color-white);
+
+                        width: 100%;
+                        height: 73px;
+                        padding: 2.5% 3% 0 0;
+
+                        @media screen and (max-width: $breakpoint-lg) {
+                            padding: 3% 4% 0 0;
+                        }
+
+                        @media screen and (max-width: $breakpoint-md) {
+                            font-size: var(--font-size-h4-responsive);
+                            padding: 4.3% 4% 0 0;
+                        }
+
+                        @media screen and (max-width: $breakpoint-sm) {
+                            font-size: var(--font-size-content-responsive);
+
+                            height: 40px;
+                            padding: 4% 4% 0 0;
+                        }
+
+                        @media screen and (max-width: 425px) {
+                            padding: 5% 4% 0 0;
+                            font-size: var(--font-size-content-mobile);
+                        }
+
+                        @media screen and (max-width: $breakpoint-xs) {
+                            font-size: var(--font-size-infocard);
+                            padding: 6% 4% 0 0;
+                        }
+                    }
+
+                    p {
+                        width: 100%;
+                        span {
+                            font-family: var(--font-primary);
+                            color: var(--color-primary);
+                            font-weight: var(--fw-bold);
+                        }
+                        .nom__aPropos {
+                            font-size: var(--font-size-h3);
+
+                            @media screen and (max-width: $breakpoint-lg) {
+                                font-size: var(--font-size-h4);
+                            }
+
+                            @media screen and (max-width: $breakpoint-md) {
+                                font-size: var(--font-size-h4-responsive);
+                            }
+
+                            @media screen and (max-width: 425px) {
+                                font-size: var(--font-size-h4-mobile);
+                            }
+                        }
+
+                        @media screen and (max-width: $breakpoint-lg) {
+                            margin: 5px;
+
+                            font-size: var(--font-size-h4-mobile);
+                        }
+
+                        @media screen and (max-width: $breakpoint-sm) {
+                            font-size: var(--font-size-content-responsive);
+                        }
+
+                        @media screen and (max-width: 425px) {
+                            font-size: var(--font-size-content-mobile);
+                        }
+                    }
+
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        list-style-type: none;
+
+                        @media screen and (max-width: $breakpoint-md) {
+                            margin-top: 0;
+                        }
+
+                        @media screen and (max-width: $breakpoint-sm) {
+                            padding: 0;
+                        }
+                        li {
+                            font-family: var(--font-primary);
+                            width: 49%;
+                            padding-bottom: 2%;
+
+                            &::before {
+                                content: '';
+                                display: inline-block;
+                                height: 35px;
+                                width: 35px;
+                                background-image: url(../../assets/images/bullets.png);
+                                background-size: contain;
+
+                                @media screen and (max-width: $breakpoint-lg) {
+                                    height: 20px;
+                                    width: 20px;
+                                }
+                                @media screen and (max-width: $breakpoint-xs) {
+                                    height: 10px;
+                                    width: 10px;
+                                }
+                            }
+
+                            @media screen and (max-width: $breakpoint-lg) {
+                                font-size: var(--font-size-h4-mobile);
+                            }
+
+                            @media screen and (max-width: $breakpoint-sm) {
+                                font-size: var(--font-size-content-responsive);
+                            }
+
+                            @media screen and (max-width: $breakpoint-xs) {
+                                font-size: var(--font-size-content-mobile);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .trapeze_bonjour {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            background-image: url(../../assets/images/aPropos/backgroundBonjour.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            width: 100%;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media screen and (max-width: $breakpoint-lg) {
+                top: 4vh;
+            }
+
+            @media screen and (max-width: $breakpoint-md) {
+                top: -4%;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 50%;
+                height: 60px;
+
+                top: 14%;
+                left: 8%;
+            }
+
+            @media screen and (max-width: 425px) {
+                top: 13%;
+            }
+
+            h1 {
+                font-size: var(--font-size-h2);
+                color: var(--color-white);
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    font-size: var(--font-size-h4-mobile);
+                }
+            }
+        }
+
+        .fleche__scroll {
+            position: absolute;
+            top: 13%;
+            right: 0;
+            display: flex;
+            justify-content: flex-end;
+
+            background-image: url(../../assets/images/aPropos/FlecheScroll1.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+
+            width: 25vw;
+            height: 45vh;
+
+            @media screen and (max-width: $breakpoint-md) {
+                top: 225px;
+                width: 20vw;
+                height: 40vh;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 30vw;
+
+                top: 580px;
+                right: 100px;
+            }
+
+            @media screen and (max-width: 425px) {
+                display: none;
+            }
+        }
+    }
+
+    // ------------------------SECTION 2-----------------------------
+
+    .peuxFaire {
+        position: relative;
+        margin-top: 8%;
+
+        .parallelogram__peuxFaire {
+            background-image: url(../../assets/images/aPropos/affiche2Desktop.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+
+            margin: auto;
+            width: 90vw;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width: $breakpoint-sm) {
+                background-image: url(../../assets/images/aPropos/affiche2_responsive.png);
+
+                align-items: flex-start;
+                padding-top: 6%;
+
+                height:80vh;
+            }
+            @media screen and (max-width: 425px) {
+                height: 85vh; 
+                width: 100vw;
+            }
+            @media screen and (max-width: $breakpoint-xs) {
+               
+            }
+
+            .contenuPeuxFaire {
+                padding-top: 3%;
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    padding: 0;
+                }
+                @media screen and (max-width: 425px) {
+                    margin-top: 3vh;
+                }
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    margin-top: 3vh;
+                }
+            }
+            .contenuPeuxFaire__text1,
+            .contenuPeuxFaire__text2 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                h2 {
+                    background-image: url(../../assets/images/aPropos/sousTitreBeige.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+
+                    text-align: center;
+
+                    width: 100%;
+                    height: 73px;
+
+                    padding-top: 1.25%;
+                    font-family: var(--font-primary);
+                    color: var(--color-white);
+                    font-weight: var(--regular);
+                    font-size: var(--font-size-content);
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        padding-top: 2%;
+                    }
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        width: 65%;
+                        padding-top: 3%;
+                        font-size: var(--font-size-h4-mobile);
+                    }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        width: 70%;
+                        padding-top: 6.5%;
+
+                        font-size: var(--font-size-content-mobile);
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        width: 80%;
+                        height: 30px;
+                        margin: 3% 0;
+                        padding-top: 2.5%;
+
+                        font-size: var(--font-size-content-mobile);
+                    }
+                }
+                svg {
+                    @media screen and (max-width: $breakpoint-lg) {
+                        height: 2.5em;
+                        width: 2.5em;
+                    }
+                }
+            }
+
+            .contenuPeuxFaire__text2 {
+                margin-top: 5%;
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    margin-top: 1%;
+                }
+                .bloc {
+                    justify-content: space-between;
+                    width: 40%;
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        width: 45%;
+                        margin-left: 15%;
+                    }
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        margin-left: 15%;
+                        width:60%;
+                    }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                       margin:0;
+            
+                    }
+                    
+
+                    .blocText {
+                        
+                        @media screen and (max-width: $breakpoint-lg) {
+                            width: 48%;
+                        }
+
+                        @media screen and (max-width: $breakpoint-sm) {
+                            width: 80%;
+                            padding-bottom:5%;
+                        }
+
+                        @media screen and (max-width: 425px) {
+                            padding-bottom:10%;
+                 
+                         }
+
+                        .icones{
+                            width:130%;
+                            display:flex;
+                            align-items: center;
+
+                            @media screen and (max-width: $breakpoint-lg) {
+                                width: 50%;
+                            }
+
+                            @media screen and (max-width: $breakpoint-md) {
+                                width: 60%;
+                    
+                            }
+
+                            @media screen and (max-width: $breakpoint-sm) {
+                                width: 17%;
+                                flex-direction: column;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bloc {
+                margin-top: 2%;
+                display: flex;
+                justify-content: space-between;
+
+                width: 65%;
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    width: 75%;
+                }
+
+                @media screen and (max-width: $breakpoint-md) {
+                    width: 80%;
+                }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 50%;
+                    margin: 0;
+
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                h3 {
+                    font-family: var(--font-primary);
+                    color: var(--color-primary);
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        font-size: var(--font-size-h4-responsive);
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        font-size: var(--font-size-content-responsive);
+                    }
+                }
+                p {
+                    margin: 0;
+                    font-size: var(--font-size-content-responsive);
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        font-size: var(--font-size-content-mobile);
+                    }
+                }
+                h3,
+                p {
+                    margin-left: 5%;
+                }
+
+                .blocText {
+                    display: flex;
+                    align-items: center;
+                    width: 22%;
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        width: 35%;
+                        align-items: flex-start;
+                    }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        width: 100%;
+                        margin-top: 5%;
+                    }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        margin-top: 2%;
+                    }
+                }
+            }
+        }
+        .trapeze_peuxFaire {
+            position: absolute;
+            top: -2%;
+            left: 0;
+
+            background-image: url(../../assets/images/aPropos/titrePeuxFaire.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            width: 100%;
+            height: 16%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            z-index: 2;
+
+            h1 {
+                font-size: var(--font-size-h2);
+                color: var(--color-black);
+                text-align: center;
+                @media screen and (max-width: $breakpoint-lg) {
+                    font-size: var(--font-size-h3-responsive);
+                }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    font-size: var(--font-size-h4-responsive);
+                }
+
+                @media screen and (max-width: 425px) {
+                    font-size: var(--font-size-content-responsive);
+                }
+            }
+
+            @media screen and (max-width: $breakpoint-lg) {
+                top: 3%;
+            }
+
+            @media screen and (max-width: $breakpoint-md) {
+                top: 10%;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                top: -5%;
+                left: 25%;
+
+                width: 50%;
+            }
+
+            @media screen and (max-width: 425px) {
+                top: -5%;
+                left: 13%;
+
+                width: 80%;
+            }
+
+        }
+
+        .fleche__scroll {
+            position: absolute;
+            top: -15%;
+            left: -7%;
+
+            width: 45%;
+            height: 125%;
+            display: flex;
+            justify-content: flex-end;
+
+            background-image: url(../../assets/images/aPropos/FlecheScroll2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+
+            @media screen and (max-width: $breakpoint-lg) {
+                width: 30%;
+                height: 100%;
+
+                top: -1.8%;
+                left: 0;
+            }
+
+            @media screen and (max-width: $breakpoint-md) {
+                top: -0.7%;
+                left: 0;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                background-image: url(../../assets/images/aPropos/fleche2_responsive.png);
+
+                width: 20%;
+
+                top: -7%;
+                left: 15%;
+            }
+
+            @media screen and (max-width: 425px) {
+                display: none;
+            }
+
+            .fleche__scroll__text {
+                transform: rotate(-28deg);
+                margin-right: 54%;
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    transform: rotate(-10deg);
+                    margin-right: 65%;
+                }
+            }
+        }
+        .sticker {
+            position: absolute;
+            bottom: -25%;
+            right: -5%;
+            height: 350px;
+
+            display: flex;
+            background-image: url(../../assets/images/aPropos/sticker.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            @media screen and (min-width: 1921px) {
+                bottom: -15%;
+            }
+
+            @media screen and (max-width: $breakpoint-lg) {
+                width: 30%;
+                height: 30%;
+
+                bottom: -5%;
+                right: -3%;
+            }
+
+            @media screen and (max-width: $breakpoint-md) {
+                display: none;
+            }
+
+            p {
+                width: 30%;
+                margin-right: 32%;
+                font-size: var(--font-size-button);
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    width: 35%;
+                    font-size: var(--font-size-content-responsive);
+                }
+
+                @media screen and (max-width: $breakpoint-md) {
+                    width: 70%;
+                    margin-right: 12%;
+
+                    font-size: var(--font-size-content-mobile);
+                }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    margin-right: 5%;
+                    font-size: var(--font-size-content-responsive);
+                }
+
+                @media screen and (max-width: 425px) {
+                    margin-right: 7%;
+                    font-size: var(--font-size-content-mobile);
+                }
+
+                span {
+                    font-family: var(--font-primary);
+                    font-weight: var(--fw-bold);
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+
+    //-------------------------SECTION 3--------------------------------
+
+    .passion {
+        position: relative;
+        .losange__passion {
+            background-image: url(../../assets/images/aPropos/affiche3Desktop.gif);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            margin: auto;
+            width: 90vw;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width: $breakpoint-md) {
+                height: 60vh;
+                width:100vw;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                background-image: url(../../assets/images/aPropos/affiche3_responsive.png);
+
+                width: 100vw;
+                height: 80vh;
+
+                align-items: flex-start;
+
+                margin-top: 10%;
+            }
+
+            .contenu__passion {
+                margin-top: 5vh;
+                @media screen and (max-width: $breakpoint-md) {
+                    margin-top: 3%;
+                }
+                @media screen and (max-width: $breakpoint-sm) {
+                    margin-top: 13%;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height:70%;
+                    width:70%;
+                }
+
+                @media screen and (max-width: 425px) {
+                    margin-top: 30%;
+                    width:80%;
+                }
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    margin-top: 15%;
+                }
+            }
+
+            .contenuPeuxFaire__text1,
+            .contenuPeuxFaire__text2,
+            .contenuPeuxFaire__text3 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .contenuPeuxFaire__text2 {
+                .bloc {
+                    justify-content: space-between;
+                    width: 80%;
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        width: 60%;
+                    }
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        width: 80%;
+                    }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        width: 100%;
+
+                        margin-top: 1%;
+                    }
+
+                    @media screen and (max-width: 425px) {
+            
+
+                        align-items: flex-start;
+                        margin-top: 3%;
+                    }
+
+                    .blocText {
+                        width: 35%;
+
+                        @media screen and (max-width: $breakpoint-md) {
+                            width: 40%;
+                        }
+
+                        @media screen and (max-width: $breakpoint-sm) {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+
+            .bloc {
+                display: flex;
+                justify-content: center;
+
+                @media screen and (max-width: $breakpoint-md) {
+                    margin-top: 2%;
+                }
+
+                @media screen and (max-width: 425px) {
+                    margin-top: 4%;
+                }
+
+                h3 {
+                    font-family: var(--font-primary);
+                    color: var(--color-primary);
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        font-size: var(--font-size-h4-responsive);
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        font-size: var(--font-size-h4-mobile);
+                    }
+                }
+                p {
+                    margin: 0;
+                    font-size: var(--font-size-content-responsive);
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        font-size: var(--font-size-content-mobile);
+                    }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        display:none;
+                    }
+                }
+                
+                h3,
+                p {
+                    margin-left: 5%;
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        margin-left: 0;
+                    }
+                }
+
+                .blocText {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 75%;
+
+                    svg {
+                        @media screen and (max-width: $breakpoint-lg) {
+                            height: 2.5em;
+                            width: 2.5em;
+                        }
+
+                        @media screen and (max-width: $breakpoint-sm) {
+                            height: 4em;
+                            width: 4em;
+                        }
+
+                        @media screen and (max-width: 425px) {
+                            height: 3em;
+                            width: 3em;
+                        }
+                    }
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        width: 60%;
+                        align-items: flex-start;
+                    }
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        width: 70%;
+                    }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        width: 40%;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        .parallelogram_passion {
+            position: absolute;
+            top: 1%;
+            left: 0;
+
+            background-image: url(../../assets/images/aPropos/titrePasseTemps.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            width: 100%;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media screen and (max-width: $breakpoint-md) {
+                top: -2%;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                top: -5%;
+                left: 25%;
+
+                width: 50%;
+            }
+
+            @media screen and (max-width: 425px) {
+                top: -5%;
+                left: 20%;
+
+                width: 60%;
+            }
+
+            h1 {
+                font-size: var(--font-size-h2);
+                color: var(--color-black);
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    font-size: var(--font-size-h4-responsive);
+                }
+
+                @media screen and (max-width: 425px) {
+                    font-size: var(--font-size-content-responsive);
+                }
+            }
+        }
+    }
+
+    // ------------------------ INFO GENERAL ----------------------------
+    .fleche__scroll__text {
+        color: var(--color-white);
+        margin-right: 53%;
+        transform: rotate(25deg);
+        writing-mode: vertical-rl;
+        text-align: center;
+        text-orientation: upright;
+        letter-spacing: -50px;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            font-size: var(--font-size-h4);
+            letter-spacing: -30px;
+            transform: rotate(27deg);
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+            font-size: var(--font-size-h4-mobile);
+            letter-spacing: -25px;
+            transform: rotate(27deg);
+            margin-right: 52%;
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            font-size: var(--font-size-content-responsive);
+            letter-spacing: -20px;
+        }
+    }
+    .poteaux {
+        z-index: -999;
+        position: fixed;
+        top: -30%;
+        left: 48.5%;
+
+        height: 200vh;
+    }
+}
