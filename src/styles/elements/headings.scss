@@ -6,7 +6,9 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: var(--font-tertiary);
+    font-family: var(--font-primary);
+    font-weight:var(--fw-xbold);
+    text-align: center;
     line-height: 1.1;
     margin: 0;
 
@@ -15,7 +17,6 @@ h4 {
 
 h1 {
     font-size: var(--font-size-h1);
-    line-height: 1;
 
     @media screen and (max-width: $breakpoint-lg) {
         font-size: var(--font-size-h1-responsive);
@@ -32,6 +33,7 @@ h1 {
 
 h2 {
     font-size: var(--font-size-h2);
+    margin-top:var(--spacing-md);
     @media screen and (max-width: $breakpoint-sm) {
         font-size: var(--font-size-h2-responsive);
     }
@@ -43,8 +45,6 @@ h2 {
 
 h3 {
     font-size: var(--font-size-h3);
-    &.nomArtiste {
-        font-family: var(--font-secondary);
         @media screen and (max-width: $breakpoint-sm) {
             font-size: var(--font-size-h3-responsive);
         }
@@ -52,13 +52,4 @@ h3 {
         @media screen and (max-width: $breakpoint-xs) {
             font-size: var(--font-size-h3-mobile);
         }
-    }
-
-    &.nomEtablissement {
-        font-family: var(--font-tertiary);
-    }
-}
-
-h4 {
-    font-size: var(--font-size-h4);
 }

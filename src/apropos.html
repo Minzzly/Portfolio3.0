@@ -3,23 +3,21 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Audrey Langlois | À Propos | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+    <title>Audrey Langlois | Portfolio</title>
+
+
+    <link rel="stylesheet" href="styles/main.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Comfortaa:wght@400;700&family=Telex&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fira+Sans:wght@400;800&display=swap"
+        rel="stylesheet">
+
     <link rel="shortcut icon" type="image/jpg" href="./assets/images/Logo.png" />
-
-    <!--Imports a model-viewer JavaScript code -->
-    <!--It helps to handle how the 3D Object would be displayed -->
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-
-    <link rel="stylesheet" href="styles/main.css" />
     <script src="scripts/main.js" defer></script>
+
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LHCS1SRPG0"></script>
@@ -32,35 +30,43 @@
 
         gtag("config", "G-LHCS1SRPG0");
     </script>
+
+    <!--Imports a model-viewer JavaScript code -->
+    <!--It helps to handle how the 3D Object would be displayed -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
 </head>
 
-<body>
+<body class="accueil">
     <header class="header" data-component="Header">
         <nav class="navPrincipal">
-            <div class="navPrincipal__logo">
-                <img src="assets/images/decorations/DecoNav.png" alt="" />
-                <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
-            </div>
+
             <ul class="navPrincipal__liste">
+
+                <a href="index.html" class="logoPrincipale">
+                    <li><img src="assets/images/Logo.png" alt="" /></li>
+                </a>
                 <a href="apropos.html">
                     <li>À propos</li>
+                    <div></div>
                 </a>
-                <li class="navPoint"></li>
-                <a href="projets.html">
+                <a href="index.html#projets">
                     <li>Projets</li>
+                    <div></div>
                 </a>
-                <li class="navPoint"></li>
                 <a href="contact.html">
                     <li>Contact</li>
+                    <div></div>
                 </a>
-                <li class="navPoint"></li>
                 <a href="https://youtu.be/0DNykAPC0gw">
                     <li>Voir ma Vidéo</li>
+                    <div></div>
                 </a>
             </ul>
 
-            <img class="navPrincipal__decorDroite" src="assets/images/decorations/DecoNav.png" alt="" />
         </nav>
+
 
         <nav class="navMobile">
             <div class="hamburgerEtLogo wrapper">
@@ -297,7 +303,73 @@
     </div>
 
     <footer class="footer">
-        <p class="">AudreyLanglois©2021</p>
+        <nav class="navFooter">
+            <ul class="navFooter_liste">
+                <a href="apropos.html">
+                    <li>
+                        <svg class="icon icon--md">
+                            <a href="https://twitter.com/MinzzlyLanglois" target="blank">
+                                <use xlink:href="#icon-linkin"></use>
+                            </a>
+                        </svg>
+                    </li>
+                    <div></div>
+                </a>
+                <a href="apropos.html">
+                    <li>
+                        <svg class="icon icon--md">
+                            <a href="https://twitter.com/MinzzlyLanglois" target="blank">
+                                <use xlink:href="#icon-github"></use>
+                            </a>
+                        </svg>
+                    </li>
+                    <div></div>
+                </a>
+                <a href="#projets">
+                    <li>
+                        <svg class="icon icon--md">
+                            <a href="https://twitter.com/MinzzlyLanglois" target="blank">
+                                <use xlink:href="#icon-instagram"></use>
+                            </a>
+                        </svg>
+                    </li>
+                    <div></div>
+                </a>
+                <a href="contact.html" class="copyright">
+                    <li>AudreyLanglois©2021</li>
+                    <div></div>
+                </a>
+                <a href="https://youtu.be/0DNykAPC0gw">
+                    <li>
+                        <svg class="icon icon--md">
+                            <a href="https://twitter.com/MinzzlyLanglois" target="blank">
+                                <use xlink:href="#icon-sketchfab"></use>
+                            </a>
+                        </svg>
+                    </li>
+                    <div></div>
+                </a>
+                <a href="https://youtu.be/0DNykAPC0gw">
+                    <li>
+                        <svg class="icon icon--md">
+                            <a href="https://twitter.com/MinzzlyLanglois" target="blank">
+                                <use xlink:href="#icon-artstation"></use>
+                            </a>
+                        </svg>
+                    </li>
+                    <div></div>
+                </a>
+                <a href="https://youtu.be/0DNykAPC0gw">
+                    <li>
+                        <svg class="icon icon--md">
+                            <a href="https://twitter.com/MinzzlyLanglois" target="blank">
+                                <use xlink:href="#icon-youtube"></use>
+                            </a>
+                        </svg>
+                    </li>
+                    <div></div>
+                </a>
+        </nav>
     </footer>
 </body>
 

@@ -27,12 +27,12 @@ export default class Loader {
     }
 
     timer() {
-        setTimeout(this.loading.bind(this), 3000);
+        setTimeout(this.loading.bind(this), 800);
     }
 
     loading() {
         this.html.classList.add('loaderFade');
-        setTimeout(this.enleveLoader.bind(this), 1000);
+        setTimeout(this.enleveLoader.bind(this), 300);
     }
 
     enleveLoader() {
