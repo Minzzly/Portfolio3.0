@@ -9,13 +9,4 @@
     @media screen and (max-width: $breakpoint-md) {
         width: 100%;
     }
-
-    section:not(.hero),
-    footer {
-        padding: 0 var(--spacing-lg);
-
-        @media screen and (max-width: $breakpoint-xs) {
-            padding: 0 var(--spacing-md);
-        }
-    }
 }
