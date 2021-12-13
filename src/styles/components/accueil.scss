@@ -1,4 +1,7 @@
 .accueil{
+    h1, h3{
+        color:var(--color-white);
+    }
     .separateur{
         display:block;
         margin:auto;

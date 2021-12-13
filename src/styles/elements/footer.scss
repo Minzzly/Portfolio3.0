@@ -16,7 +16,7 @@
             align-items: center;
     
             &:hover {
-                padding-top:var(--spacing-md);
+                padding-bottom:var(--spacing-sm);
             }
             &:not(:nth-child(1), :nth-child(7)){
                 margin:0 var(--spacing-xs);
@@ -27,8 +27,6 @@
 
                 
             }
-
-            
     
             div{
                 width:85%;
