@@ -1,3 +1,96 @@
-.single--hero{
+.cora{
+    .bandeDeco{
+        width:96%;
+        margin:var(--spacing-md) auto;
+        padding:var(--spacing-md);
 
+        border-radius: 15px;
+        border:var(--color-secondary) 5px solid;
+    }
+
+    article{
+        margin:7% 0;
+        background-color: var(--color-white);
+        border-radius: 20px;
+        border:var(--color-secondary) 5px solid;
+
+        img{
+            border-radius: 20px;
+            border:var(--color-secondary) 10px double;
+
+            display:block;
+            margin:auto;
+        }
+        
+        h3{
+            text-align: left;
+            font-size:var(--font-size-sous-titre-single);
+            padding-top:var(--spacing-sm);
+        }
+
+        span{
+            font-family: var(--font-primary);
+            font-weight: var(--fw-xbold);
+        }
+    }
+    .single--hero{
+        h2{
+            text-align: left;
+            font-size:var(--font-size-sous-titre-single);
+            margin:0;
+            padding-bottom:var(--spacing-sm);
+        }
+        .membresProjet{
+            padding-top:var(--spacing-md);
+            display:flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        
+            .membres{
+                width:75%;
+                ul{
+                    list-style-type: none;
+                    margin:0;
+        
+                    li, a {
+                        font-family: var(--font-secondary);
+                        font-weight: var(--fw-bold);
+                        font-size:var(--font-size-content);
+                        width: 50%;
+                        padding-bottom: 2%;
+            
+                        &::before {
+                            content: '';
+                            display: inline-block;
+                            height: 25px;
+                            width: 21px;
+                            margin-right:var(--spacing-sm);
+            
+                            background-image: url(../../assets/images/decorations/bullet.png);
+                            background-size: contain;
+                            background-repeat:no-repeat ;
+                            background-position: center;
+                        }
+            
+                        @media screen and (max-width: $breakpoint-lg) {
+                            font-size: var(--font-size-h4-mobile);
+                        }
+            
+                        @media screen and (max-width: $breakpoint-sm) {
+                            font-size: var(--font-size-content-responsive);
+                        }
+            
+                        @media screen and (max-width: $breakpoint-xs) {
+                            font-size: var(--font-size-content-mobile);
+                        }
+                    }
+                }
+            }
+        
+            img{
+                width:95%;
+                margin:0;
+            }
+        }
+    }
 }
