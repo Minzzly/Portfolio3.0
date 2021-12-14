@@ -1,4 +1,34 @@
 .cora{
+    a {
+        position: relative;
+
+        button {
+            cursor: pointer;
+            margin: var(--spacing-md) 0;
+            background-color: var(--color-background-secondary);
+            border:none;
+            border-radius: 20px;
+            
+            color: var(--color-white);
+            text-transform: uppercase;
+            padding: var(--spacing-sm);
+
+            transition: all 0.5s $ease-out-expo;
+
+            div{
+                width:85%;
+                height:2px;
+                background-color: var(--color-background-primary);
+                margin:var(--spacing-xs);
+                padding:0 var(--spacing-xl);
+            }
+            
+            &:hover {
+                background-color: var(--color-primary);
+            }
+        }
+    }
+
     .bandeDeco{
         width:96%;
         margin:var(--spacing-md) auto;
@@ -14,7 +44,7 @@
         border-radius: 20px;
         border:var(--color-secondary) 5px solid;
 
-        img{
+        img:not(.decoSlide){
             border-radius: 20px;
             border:var(--color-secondary) 10px double;
 
@@ -25,7 +55,7 @@
         h3{
             text-align: left;
             font-size:var(--font-size-sous-titre-single);
-            padding-top:var(--spacing-sm);
+            padding-top:var(--spacing-lg);
         }
 
         span{
