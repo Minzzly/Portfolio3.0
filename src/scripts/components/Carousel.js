@@ -49,17 +49,11 @@ export default class Carousel {
 
     // Gestion des paramètres différents lorsqu'on veut avoir
     // 2 slides visibles sur grand écran et une seule sur petit écran
-    if (this.element.dataset.carousel == 'scroll') {
+    if (this.element.dataset.carousel == 'solo') {
       options = {
         ...this.defaultOptions,
         ...{
-          // slidesPerView: 1,
-          scrollbar: {
-            el: '.swiper-scrollbar',
-            draggable: true,
-          },
-          navigation: false,
-          pagination: false,
+          slidesPerView: 1,
         },
       };
     }

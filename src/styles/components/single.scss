@@ -1,4 +1,19 @@
-.cora{
+.cora, .nihilo{
+
+    .video {
+        padding-bottom: 50%;
+        margin: auto;
+        img{
+            width:100%;
+        }
+    }
+    
+    .bouttonSolo{
+        width:100%;
+        display:flex;
+        justify-content: center;
+    }
+    
     a {
         position: relative;
 
@@ -77,6 +92,7 @@
             align-items: flex-start;
         
             .membres{
+                padding-left:var(--spacing-md);
                 width:75%;
                 ul{
                     list-style-type: none;
@@ -86,7 +102,6 @@
                         font-family: var(--font-secondary);
                         font-weight: var(--fw-bold);
                         font-size:var(--font-size-content);
-                        width: 50%;
                         padding-bottom: 2%;
             
                         &::before {
@@ -115,11 +130,6 @@
                         }
                     }
                 }
-            }
-        
-            img{
-                width:95%;
-                margin:0;
             }
         }
     }
