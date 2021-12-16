@@ -48,7 +48,7 @@
                 }
             }
 
-            .projet, .prog, .nihilo__slide, .hollow__slide{
+            .projet, .prog, .nihilo__slide, .hollow__slide, .description__couleurs, .monty__slide{
                 img, video{
                     display:block;
                     height:466px;
@@ -59,7 +59,7 @@
                 }
             }
 
-            .projet, .capacite, .prog, .nihilo__slide, .hollow__slide{
+            .projet, .capacite, .prog, .nihilo__slide, .hollow__slide, .monty__slide{
                 overflow: hidden;
                 border-radius: 20px;
                 border:var(--color-secondary) 10px double;

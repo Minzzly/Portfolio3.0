@@ -101,20 +101,32 @@
         </nav>
     </header>
 
-    <section class="monty wrapper">
+    <section class="monty wrapper" data-component="Scrolly">
         <article class="monty__hero single--hero">
             <div class="bandeDeco">
-                <img src="assets/images/singleMonty/LogoMontysAardvark.png" alt="" data-component="Modal"
-                    data-modal-id="tpl-modal-images"
-                    data-modal-source="assets/images/singleMonty/LogoMontysAardvark.png" />
-                <div class="content__text">
-                    <h1>Monty's Aardvark</h1>
-                    <div class="description">
-                        <p class="description__projet">Sur ce contrat:</p>
-                        <p class="description__nom">
-                            Mon père a créé un groupe de musique et il avait besoin d’un logo avant de
-                            publier sa musique. Donc, il m’a demandé de lui en créer un.
-                        </p>
+                <h1 data-scrolly="FlipfromBottom">Monty's Aardvark</h1>
+                <div class="description" data-scrolly="FlipfromBottom">
+                    <h2>Sur ce contrat:</h2>
+                    <p>
+                        Mon père a créé un groupe de musique et il avait besoin d’un logo avant de
+                        publier sa musique. Donc, il m’a demandé de lui en créer un.
+                    </p>
+                </div>
+
+                <div class="membresProjet" data-scrolly="FlipfromBottom">
+                    <img src="assets/images/singleMonty/LogoMontysAardvark.png" alt="" data-component="Modal"
+                        data-modal-id="tpl-modal-images"
+                        data-modal-source="assets/images/singleMonty/LogoMontysAardvark.png" />
+
+                    <div class="membres">
+                        <h2>J'ai fait :</h2>
+
+                        <div class="membre">
+                            <ul>
+                                <li>Le sketch du logo</li>
+                                <li>Le logo complet sur Photoshop</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -122,8 +134,8 @@
 
         <article class="monty__sketch">
             <div class="bandeDeco">
-                <h2>Étape 1: Sketch</h2>
-                <div class="description">
+                <h2 data-scrolly="FlipfromBottom">Étape 1: Sketch</h2>
+                <div class="description" data-scrolly="FlipfromBottom">
                     <h3 class="soustitre__storyboard">Un sketch à partir de trois images</h3>
                     <p class="description__nom">
                         Voici le sketch <span>final</span>. Le nom m’a été donné par mon père et il m’a
@@ -137,42 +149,51 @@
                 <img src="assets/images/singleMonty/sketchMonty.jpg" alt="" data-component="Modal"
                     data-modal-id="tpl-modal-images" data-modal-source="assets/images/singleMonty/sketchMonty.jpg" />
             </div>
-
         </article>
 
         <article class="monty__lineart">
             <div class="bandeDeco">
-                <h2>
-                    Étape 2: Lineart <br />
-                    et organisation
+                <h2 data-scrolly="FlipfromBottom">
+                    Étape 2: Lineart et organisation
                 </h2>
 
-                <div class="swiper-container" data-component="Carousel" data-carousel="coverflow">
+                <div class="swiper-container" data-component="Carousel" data-carousel="double"
+                    data-scrolly="FlipfromBottom">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <h3>Des améliorations pour un meilleur résultats:</h3>
-                            <p class="descriptio">
-                                Après avoir fini le sketch, l’illustration n’était
-                                <span>pas parfaite</span>, c’est-à-dire que les lettres n’étaient pas
-                                droites et l’animal était trop petit.
-                            </p>
-                            <img src="assets/images/singleMonty/Lineart.png" alt="" data-component="Modal"
-                                data-modal-id="tpl-modal-images"
-                                data-modal-source="assets/images/singleMonty/Lineart.png" />
+                            <div class="monty__slide">
+                                <img src="assets/images/singleMonty/Lineart.png" alt="" data-component="Modal"
+                                    data-modal-id="tpl-modal-images"
+                                    data-modal-source="assets/images/singleMonty/Lineart.png" />
+                                <div class="description" data-component="Modal" data-modal-id="tpl-modal-images"
+                                    data-modal-source="assets/images/singleMonty/Lineart.png">
+                                    <h3>Des améliorations :</h3>
+                                    <p>
+                                        Après avoir fini le sketch, l’illustration n’était
+                                        <span>pas parfaite</span>, c’est-à-dire que les lettres n’étaient pas
+                                        droites et l’animal était trop petit.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="swiper-slide">
-                            <h3>On se perd facilement sans l’organisation!</h3>
-                            <p class="description">
-                                Dès le début, il faut que j’<span>organise</span> mes
-                                <span>calques</span> pour que je me retrouve facilement dans mon projet,
-                                car le plus que j’avance dans mon oeuvre, le plus de calque que je vais
-                                avoir et c’est pour cela que je dois les <span>renommer</span> et les
-                                <span>regrouper</span>.
-                            </p>
-                            <img src="assets/images/singleMonty/calques.png" alt="" data-component="Modal"
-                                data-modal-id="tpl-modal-images"
-                                data-modal-source="assets/images/singleMonty/calques.png" />
+                            <div class="monty__slide">
+                                <img src="assets/images/singleMonty/calques.png" alt="" data-component="Modal"
+                                    data-modal-id="tpl-modal-images"
+                                    data-modal-source="assets/images/singleMonty/calques.png" />
+                                <div class="description" data-component="Modal" data-modal-id="tpl-modal-images"
+                                    data-modal-source="assets/images/singleMonty/calques.png">
+                                    <h3>L’organisation!</h3>
+                                    <p>
+                                        Dès le début, il faut que j’<span>organise</span> mes
+                                        <span>calques</span> pour que je me retrouve facilement dans mon projet,
+                                        car le plus que j’avance dans mon oeuvre, le plus de calque que je vais
+                                        avoir et c’est pour cela que je dois les <span>renommer</span> et les
+                                        <span>regrouper</span>.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -182,11 +203,11 @@
 
         <article class="monty__final">
             <div class="bandeDeco">
-                <h2>
+                <h2 data-scrolly="FlipfromBottom">
                     Étape 3: couleurs et <br />
                     produit final
                 </h2>
-                <div class="description">
+                <div class="description" data-scrolly="FlipfromBottom">
                     <h3 class="soustitre__storyboard">Les couleurs:</h3>
                     <p class="description__nom">
                         Pour ce logo, j’ai été dans un style avec pas trop de<span> détail</span>, mais
