@@ -48,8 +48,8 @@
                 }
             }
 
-            .projet, .prog, .nihilo__slide{
-                img{
+            .projet, .prog, .nihilo__slide, .hollow__slide{
+                img, video{
                     display:block;
                     height:466px;
                     object-fit: cover;
@@ -59,12 +59,12 @@
                 }
             }
 
-            .projet, .capacite, .prog{
+            .projet, .capacite, .prog, .nihilo__slide, .hollow__slide{
                 overflow: hidden;
                 border-radius: 20px;
                 border:var(--color-secondary) 10px double;
 
-                .resumeProjet, .textCapacite, .prog__description{
+                .resumeProjet, .textCapacite, .prog__description, .description{
                     background-color: rgba(0,21,36,0.8);
                     color:var(--color-white);
                     position: absolute;
@@ -94,7 +94,8 @@
                 }  
 
                 &:hover{
-                    .resumeProjet, .textCapacite, .prog__description{
+                    .resumeProjet, .textCapacite, .prog__description, .description{
+                        cursor: pointer;
                         transition: all 0.3s ease-out;
                         opacity:1;
                         a{

@@ -14,7 +14,7 @@ export default class Carousel {
       slidesPerView: 3
       ,
       spaceBetween: 30,
-      loop: true,
+      loop: false,
       pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
@@ -47,13 +47,16 @@ export default class Carousel {
       };
     }
 
-    // Gestion des paramètres différents lorsqu'on veut avoir
-    // 2 slides visibles sur grand écran et une seule sur petit écran
-    if (this.element.dataset.carousel == 'solo') {
+    if (this.element.dataset.carousel == 'double') {
       options = {
         ...this.defaultOptions,
         ...{
-          slidesPerView: 1,
+          slidesPerView: 2,
+          breakpoints: {
+            768: {
+              slidesPerView: 2,
+            },
+          },
         },
       };
     }
