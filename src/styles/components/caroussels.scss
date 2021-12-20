@@ -56,6 +56,18 @@
 
                     border:none;
                     border-radius: 0;
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        height:400px;
+                    }
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        height:425px;
+                    }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        height:325px;
+                    }
                 }
             }
 

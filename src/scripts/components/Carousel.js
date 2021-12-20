@@ -11,8 +11,16 @@ export default class Carousel {
 
     // Options par défaut pour la librairie Swiper
     this.defaultOptions = {
-      slidesPerView: 3
+      slidesPerView: 1
       ,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1440: {
+          slidesPerView: 3,
+        },
+      },
       spaceBetween: 30,
       loop: false,
       pagination: {
@@ -39,7 +47,7 @@ export default class Carousel {
         ...{
           slidesPerView: 1,
           breakpoints: {
-            768: {
+            1024: {
               slidesPerView: 2,
             },
           },

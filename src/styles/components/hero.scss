@@ -7,6 +7,20 @@
 
     color:var(--color-background-primary);
 
+    @media screen and (max-width: $breakpoint-md) {
+        margin-top:10%;
+        height:100%;
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        margin-top:25%;
+        height:100%;
+    }
+
+    .textAccueil , .decoVideo, .decoScroll{
+        pointer-events: none;
+    }
+
     .video {
         width: 100%;
         padding-bottom: 50%;
@@ -14,32 +28,53 @@
 
         position:relative;
 
-
-        @media screen and (max-width: $breakpoint-md) {
-            width: 75%;
-            padding-bottom: 50%;
-        }
-
-        @media screen and (max-width: 425px) {
-            width: 75%;
-            padding-bottom: 50%;
-        }
-
         .decoVideo{
+            border-radius: 0;
+
             position:absolute;
-            bottom:-4%;
-            right:-3.5%;
+            bottom:-5%;
+            left:-5%;
 
             width:147px;
             height:206px;
+
+            transform: scaleX(-1);
+
+            @media screen and (max-width: $breakpoint-md) {
+                width:90px;
+                height:126px;   
+                left:-4%;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                width:62px;
+                height:87px;   
+                left:-4%;
+            }
         }
         .decoScroll{
             position:absolute;
-            bottom:-10%;
-            left:-10%;
+            bottom:-13%;
+            right:-10%;
 
             width:233px;
             height:216px;
+
+            @media screen and (max-width: $breakpoint-lg) {
+                bottom:-18%;
+            }
+
+            @media screen and (max-width: $breakpoint-md) {
+                bottom:-22%;
+                right:-5%;
+
+                width:160px;
+                height:148px;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+               display:none;
+            }
 
             p{
                 width:233px;
@@ -50,12 +85,16 @@
                 color:var(--color-background-secondary);
                 font-size: 1.75rem;
                 font-weight:var(--fw-regular);
+
+                @media screen and (max-width: $breakpoint-md) {    
+                    width:160px;
+                    top:47px;
+                    left:-5%;
+
+                    font-size:var(--font-size-liens);
+                }
             }
         }
-    }
-
-    @media screen and (max-width: $breakpoint-sm) {
-        margin: 0;
     }
 
     .queen {
@@ -72,13 +111,18 @@
         flex-direction: column;
 
         position:absolute;
-        top:50vh;
+        top:20%;
         left:0;
         width:100%;
         margin:auto;
 
+
         @media screen and (max-width: $breakpoint-sm) {
-            text-align: center;
+            top:15%;
+        }
+
+        @media screen and (max-width: $breakpoint-xs) {
+            top:10%;
         }
     }
 }

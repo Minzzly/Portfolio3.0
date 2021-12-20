@@ -41,6 +41,12 @@
     width:100vw;
     display:flex;
     justify-content: space-between;
+
+    @media screen and (max-width: $breakpoint-xs) {
+        img{
+            width:25%;
+        }
+    }
 }
 }
 
