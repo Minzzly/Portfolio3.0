@@ -59,9 +59,9 @@ export default class Carousel {
       options = {
         ...this.defaultOptions,
         ...{
-          slidesPerView: 2,
+          slidesPerView: 1,
           breakpoints: {
-            768: {
+            426: {
               slidesPerView: 2,
             },
           },

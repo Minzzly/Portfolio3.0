@@ -45,4 +45,9 @@
 .icon--xl {
     height: 5em;
     width: 5em;
+
+    @media screen and (max-width: $breakpoint-xs) {
+        height: 3em;
+        width: 3em;
+    }
 }

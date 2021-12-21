@@ -1,4 +1,21 @@
 .cora, .nihilo, .hollowknight, .FaitEnUn, .monty, .temple{
+
+    @media screen and (max-width: $breakpoint-lg) {
+        margin-top: 7%;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        margin-top: 15%;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        margin-top: 17%;
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        margin-top: 33%;
+    }
+
     .sketchfab-embed-wrapper{
         iframe{
             width:800px;
@@ -36,12 +53,20 @@
 
             transition: all 0.5s $ease-out-expo;
 
+            @media screen and (max-width: $breakpoint-xs) {
+                font-size:var(--font-size-content-mobile);
+            } 
+
             div{
                 width:85%;
                 height:2px;
                 background-color: var(--color-background-primary);
                 margin:var(--spacing-xs);
                 padding:0 var(--spacing-xl);
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    padding:0 var(--spacing-lg);
+                } 
             }
             
             &:hover {
@@ -57,6 +82,10 @@
 
         border-radius: 15px;
         border:var(--color-secondary) 5px solid;
+
+        @media screen and (max-width: $breakpoint-md) {
+            margin:var(--spacing-sm) auto;
+        }
     }
 
     article{
@@ -77,6 +106,12 @@
             text-align: left;
             font-size:var(--font-size-sous-titre-single);
             padding-top:var(--spacing-lg);
+
+            @media screen and (max-width: $breakpoint-md) {
+                font-size:var(--font-size-sous-titre-single-responsive);
+                padding:0;
+                margin-top:5%;
+            }
         }
 
         span{
@@ -85,21 +120,48 @@
         }
     }
     .single--hero{
+        
         h2{
             text-align: left;
             font-size:var(--font-size-sous-titre-single);
             margin:0;
             padding-bottom:var(--spacing-sm);
+
+            @media screen and (max-width: $breakpoint-md) {
+                font-size:var(--font-size-sous-titre-single-responsive);
+                padding:0;
+                margin-top:5%;
+            }
         }
         .membresProjet{
             padding-top:var(--spacing-md);
             display:flex;
             justify-content: space-between;
             align-items: flex-start;
+
+            @media screen and (max-width: $breakpoint-md) {
+                flex-direction: column;
+            }
         
             .membres{
                 padding-left:var(--spacing-md);
                 width:75%;
+
+                @media screen and (max-width: $breakpoint-md) {
+                   margin-top: 5%;
+                }
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    width:100%;
+                    padding:0;
+                }
+
+                a{
+                    @media screen and (max-width: $breakpoint-xs) {
+                        font-size:var(--font-size-content-responsive) ;
+                    }
+                }
+
                 ul{
                     list-style-type: none;
                     margin:0;

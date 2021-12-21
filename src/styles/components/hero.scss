@@ -97,10 +97,20 @@
         }
     }
 
+    h1{
+        @media screen and (max-width: $breakpoint-xs) {
+            font-size:var(--font-size-sous-titre-single);
+        }
+    }
+
     .queen {
         .slogan {
             font-weight: var(--fw-bold);
             text-transform: none;
+
+            @media screen and (max-width: $breakpoint-xs) {
+                font-size:var(--font-size-content-mobile);
+            }
         }
     }
 
