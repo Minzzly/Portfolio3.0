@@ -5,7 +5,8 @@
     position:fixed;
     top:0;
     left:0;
-    background-color: var(--color-background-primary);
+    background-image: url("../assets/images/background.png");
+    background-repeat: repeat-y;
     display:flex;
     justify-content: center;
     align-items: center;

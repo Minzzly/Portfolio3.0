@@ -39,9 +39,29 @@
                         align-items: center;
                         width:80%;
 
+                        @media screen and (max-width: $breakpoint-lg) {
+                            width:100%;
+                        } 
+
+                        @media screen and (max-width: $breakpoint-md) {
+                            width:80%;
+                        } 
+
+                        @media screen and (max-width: $breakpoint-md) {
+                            bottom:20%;
+                        } 
+
                         img{
                             display: block;
                             width:30%;
+
+                            @media screen and (max-width: $breakpoint-md) {
+                                width:25%;
+                            } 
+
+                            @media screen and (max-width: $breakpoint-sm) {
+                                width:28%;
+                            }
                         }
 
                     }
