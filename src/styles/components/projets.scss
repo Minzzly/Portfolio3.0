@@ -1,5 +1,9 @@
 .projets {
     margin-top:10%;
+
+    @media screen and (max-width: $breakpoint-md) {
+        margin-top:15%;
+    }
     .card {
         margin: 10.5% auto;
         .card__contenu {
@@ -9,6 +13,10 @@
             margin: auto;
             display: flex;
             justify-content: center;
+
+            @media screen and (max-width: $breakpoint-sm) {
+                flex-direction: column;
+            }
         }
 
         img {
@@ -17,6 +25,12 @@
             width: 491px;
             height: 491px;
             object-fit: cover;
+
+            @media screen and (max-width: $breakpoint-sm) {
+                width:350px;
+                height:350px;
+
+            }
         }
 
         .card__texte {
@@ -25,12 +39,24 @@
             flex-direction: column;
 
             width:65%;
+
+            @media screen and (max-width: $breakpoint-sm) {
+                text-align: center;
+                width:100%;
+            }
             
             &:nth-child(even){
                 margin-left:5%;
                 h2{
                     text-align: left;
                 }
+                @media screen and (max-width: $breakpoint-sm) {
+                    margin:0;
+                    h2, p{
+                        width:100%;
+                        text-align: center;
+                    }
+                }   
             }
 
             &:nth-child(odd){
@@ -41,7 +67,20 @@
 
                 a, p{
                     margin-left:auto;
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        margin:0;
+                    }
                 }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    margin:0;
+                    h2, p{
+                        width:100%;
+                        text-align: center;
+                    }
+                    order:2;
+                }  
             }
 
             a {    
@@ -57,14 +96,25 @@
                     padding: var(--spacing-sm);
         
                     transition: all 0.5s $ease-out-expo;
-    
         
-                    div{
+                    @media screen and (max-width: $breakpoint-xs) {
+                        font-size: var(--font-size-content);
+                    }
+        
+                     div{
                         width:85%;
                         height:2px;
                         background-color: var(--color-background-primary);
                         margin:var(--spacing-xs);
                         padding:0 var(--spacing-xl);
+        
+                        @media screen and (max-width: $breakpoint-sm) {
+                            padding:0 var(--spacing-lg-bplg);
+                        }
+        
+                        @media screen and (max-width: $breakpoint-xs) {
+                            padding:0 var(--spacing-lg-bpsm);
+                        }
                     }
                     
                     &:hover {
@@ -87,6 +137,9 @@
             .card__resume {
                 font-size: var(--font-size-h4-mobile);
 
+                @media screen and (max-width: $breakpoint-xs) {
+                    font-size: var(--font-size-content-responsive);   
+               }
             }
         }
     }
