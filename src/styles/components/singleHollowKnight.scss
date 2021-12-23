@@ -43,7 +43,8 @@
         }
     }
 
-    .hollow__slide{
+    .hollow__animation{
+        .hollow__slide{
         video, img{
             height:400px!important;
 
@@ -64,4 +65,6 @@
             }
         }
     }
+    }
+    
 }
