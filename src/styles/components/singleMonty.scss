@@ -2,6 +2,14 @@
     article{
         img:not(.decoSlide){
             width:60%;
+
+            @media screen and (max-width: $breakpoint-md) {
+                width:90%;
+            } 
+
+            @media screen and (max-width: $breakpoint-xs) {
+                width:100%;
+            } 
         }
     }
 

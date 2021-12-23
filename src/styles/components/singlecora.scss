@@ -13,5 +13,18 @@
 
         width:70%;
         margin:auto;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            width:90%;            
+        } 
+
+        @media screen and (max-width: $breakpoint-md) {
+            width:50%;            
+            flex-direction: column;
+        } 
+
+        @media screen and (max-width: $breakpoint-sm) {
+            width:70%;            
+        } 
     }
 }
