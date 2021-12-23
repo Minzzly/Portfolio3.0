@@ -1,5 +1,7 @@
 .footer {
-    margin-top:var(--spacing-lg);
+    position: absolute;
+    bottom:-150px;
+    width:100vw;
     .navFooter_liste{
             margin: 0;
             padding:0;
