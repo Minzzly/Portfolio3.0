@@ -1,24 +1,8 @@
 .has-js {
-    [data-scrolly='FlipfromTop'] {
-        opacity: 0;
-        transition: all 0.5s ease-out;
-        transform: translateY(-100%);
-
-        @media screen and (max-width: $breakpoint-sm) {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        &.is-active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
     [data-scrolly='FlipfromBottom'] {
         opacity: 0;
         transition: all 0.5s ease-out;
-        transform: translateY(100%);
+        transform: translateY(40%);
 
         @media screen and (max-width: $breakpoint-sm) {
             opacity: 1;
@@ -28,6 +12,19 @@
         &.is-active {
             opacity: 1;
             transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='Opacity'] {
+        opacity: 0;
+        transition: all 1s ease-out;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            opacity: 1;
+        }
+        
+        &.is-active {
+            opacity: 1;
         }
     }
 }
