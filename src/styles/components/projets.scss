@@ -4,6 +4,10 @@
     @media screen and (max-width: $breakpoint-md) {
         margin-top:15%;
     }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        margin-top:35%;
+    }
     .card {
         margin: 10.5% auto;
         .card__contenu {
