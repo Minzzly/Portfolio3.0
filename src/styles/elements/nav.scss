@@ -135,10 +135,6 @@ header {
                     border-bottom:10px var(--color-secondary) double;
                 }
                 
-                .header-is-hidden, .is-scrolling-down &{
-                        opacity:0;
-                }
-                
                 a{
                     margin:var(--spacing-sm) 0;
                     border-radius: 20px;

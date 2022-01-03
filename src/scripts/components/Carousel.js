@@ -41,16 +41,11 @@ export default class Carousel {
 
     // Gestion des paramètres différents lorsqu'on veut avoir
     // 2 slides visibles sur grand écran et une seule sur petit écran
-    if (this.element.dataset.carousel == 'split') {
+    if (this.element.dataset.carousel == 'single') {
       options = {
         ...this.defaultOptions,
         ...{
           slidesPerView: 1,
-          breakpoints: {
-            1024: {
-              slidesPerView: 2,
-            },
-          },
         },
       };
     }
