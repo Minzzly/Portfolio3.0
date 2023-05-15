@@ -36,12 +36,11 @@
     <article class="erreur__contenu" data-scrolly="FlipfromTop">
       <h1>404</h1>
       <p>
-        Uh oh! Vous n’êtes pas sensé être ici.
+        Cette page n'existe pas.
       </p>
       <a href="index.html">
         <button class="erreur__boutton">
-          Revenir à la page d'accueil
-          <div></div>
+          Retourner à l'accueil?
         </button>
       </a>
     </article>
