@@ -2,9 +2,9 @@
    WRAPPER / ELEMENT
    ========================================================================== */
 
-   .wrapper {
+.wrapper {
     margin: auto;
-    width: 80%;
+    width: 50%;
 
     @media screen and (max-width: $breakpoint-md) {
         width: 90%;
