@@ -1,0 +1,15 @@
+button {
+    background-color: var(--color-quinary);
+    border: none;
+    border-radius: var(--spacing-xs);
+    padding: var(--spacing-sm);
+    transition: all 0.3s ease-in-out;
+    color: var(--color-white);
+
+    &:hover {
+        background-color: var(--color-background-secondary);
+        cursor: pointer;
+
+        transition: all 0.3s ease-in-out;
+    }
+}

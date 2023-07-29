@@ -1,8 +1,12 @@
 footer {
-    height: 10%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
     color: var(--color-primary);
 
@@ -13,6 +17,7 @@ footer {
         a {
             color: var(--color-primary);
             padding: 0 var(--spacing-xs);
+            transition: all 0.3s ease-in-out;
 
             &:hover {
                 color: var(--color-white);

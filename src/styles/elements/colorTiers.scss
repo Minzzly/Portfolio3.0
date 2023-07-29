@@ -13,3 +13,45 @@
 .Tier04_Padding {
     background-color: var(--color-quaterny);
 }
+
+.projetsPage,
+.projetPage {
+    h2 {
+        position: relative;
+        background: none;
+        color: var(--color-black);
+        z-index: 2;
+
+        &.Tier01_Padding::before {
+            content: "";
+            background-color: var(--color-primary);
+            border-radius: var(--spacing-sm) 0 0 var(--spacing-sm);
+
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            margin: 0 auto;
+            width: 85%;
+            height: var(--spacing-lg);
+
+            z-index: -1;
+        }
+
+        &.Tier02_Padding::before {
+            content: "";
+            background-color: var(--color-secondary);
+            border-radius: var(--spacing-sm) 0 0 var(--spacing-sm);
+
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            margin: 0 auto;
+            width: 80%;
+            height: var(--spacing-lg);
+
+            z-index: -1;
+        }
+    }
+}

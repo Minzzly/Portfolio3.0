@@ -40,6 +40,8 @@ header {
                 padding: var(--spacing-xs) var(--spacing-md);
                 border-radius: 10px 10px 0 0;
 
+                transition: all 0.3s ease-in-out;
+
                 &:hover {
                     padding-top: var(--spacing-sm);
                     transition: all 0.3s ease-in-out;

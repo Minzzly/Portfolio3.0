@@ -1,0 +1,70 @@
+.projetsPage {
+
+    .wrapper {
+        min-height: 100vh;
+        padding-bottom: var(--spacing-lg);
+
+        // ==========================================================================
+        //                  DEFAULT TITLES
+        // ==========================================================================
+        h1,
+        h2 {
+            text-align: center;
+            font-variant: small-caps;
+        }
+
+        h1 {
+            padding: var(--spacing-xl) 0;
+        }
+
+
+        // ==========================================================================
+        //                  DEFAULT STYLE PROJECT
+        // ==========================================================================
+        .projets {
+            width: 80%;
+            margin: auto;
+
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .projet {
+                display: flex;
+                flex-direction: column;
+                width: 45%;
+                overflow: hidden;
+
+                border-radius: var(--spacing-sm);
+                margin: var(--spacing-lg) 0;
+
+                &:hover {
+                    img {
+                        filter: grayscale(0%);
+                        transition: all 0.5s ease-in-out;
+                        transform: scale(110%);
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    text-align: center;
+                    background-color: var(--color-quinary);
+                    padding: var(--spacing-xs) 0;
+
+
+                    font-variant: small-caps;
+                    color: var(--color-white);
+                    z-index: 2;
+                }
+
+                img {
+                    filter: grayscale(100%);
+                    transition: all 0.5s ease-in-out;
+
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}

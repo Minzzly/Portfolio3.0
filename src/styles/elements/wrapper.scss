@@ -5,6 +5,7 @@
 .wrapper {
     margin: auto;
     width: 75%;
+    min-height: 100vh;
     background-color: var(--color-background-primary);
 
     @media screen and (max-width: $breakpoint-md) {
