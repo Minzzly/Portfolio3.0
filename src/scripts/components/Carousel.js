@@ -50,14 +50,14 @@ export default class Carousel {
       };
     }
 
-    if (this.element.dataset.carousel == 'double') {
+    if (this.element.dataset.carousel == 'default') {
       options = {
         ...this.defaultOptions,
         ...{
           slidesPerView: 1,
           breakpoints: {
             426: {
-              slidesPerView: 2,
+              slidesPerView: 3,
             },
           },
         },

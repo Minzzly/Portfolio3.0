@@ -27,6 +27,7 @@
 @import 'elements/wrapper';
 @import 'elements/colorTiers';
 @import 'elements/button';
+@import 'elements/modal';
 
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
@@ -42,6 +43,7 @@
 @import 'components/accueil';
 @import 'components/projets';
 @import 'components/contact';
+@import 'components/singledefault';
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
