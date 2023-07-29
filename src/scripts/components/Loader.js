@@ -16,23 +16,23 @@ export default class Loader {
      * Méthode d'initialisation
      */
     init() {
-        if (this.pageAccueil) {
-            window.addEventListener('load', this.timer.bind(this));
-        }
+        //if (this.pageAccueil) {
+        //window.addEventListener('load', this.timer.bind(this));
+        //}
 
-        else {
-            window.addEventListener('load', this.loading.bind(this));
-        }
+        //else {
+        window.addEventListener('load', this.loading.bind(this));
+        //}
 
     }
 
-    timer() {
-        setTimeout(this.loading.bind(this), 800);
-    }
+    // timer() {
+    //     setTimeout(this.loading.bind(this), 200);
+    // }
 
     loading() {
         this.html.classList.add('loaderFade');
-        setTimeout(this.enleveLoader.bind(this), 300);
+        setTimeout(this.enleveLoader.bind(this), 500);
     }
 
     enleveLoader() {
