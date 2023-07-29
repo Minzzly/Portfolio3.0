@@ -1,0 +1,38 @@
+.index {
+    .wrapper {
+        height: 100vh;
+        overflow-y: hidden;
+
+        .presentation {
+            width: 80%;
+            height: 90%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .aPropos {
+                padding-right: var(--spacing-lg);
+                text-align: justify;
+
+                button {
+                    background-color: var(--color-quinary);
+                    border: none;
+                    border-radius: var(--spacing-xs);
+                    padding: var(--spacing-sm);
+
+                    &:hover {
+                        background-color: var(--color-background-secondary);
+                        cursor: pointer;
+
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    a {
+                        color: var(--color-white);
+                    }
+                }
+            }
+        }
+    }
+}

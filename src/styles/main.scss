@@ -25,6 +25,7 @@
 @import 'elements/nav';
 @import 'elements/footer';
 @import 'elements/wrapper';
+@import 'elements/colorTiers';
 
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
@@ -32,25 +33,12 @@
 @import '../../node_modules/swiper/swiper.scss';
 @import '../../node_modules/swiper/components/pagination/pagination.scss';
 
-@import 'components/hero';
-@import 'components/accueil';
 @import 'components/caroussels';
-@import 'components/affichesAPropos';
 @import 'components/icons';
-@import 'components/projets';
-@import 'components/contact';
-@import 'components/single';
-@import 'components/singleMonty';
-@import 'components/singleTemple';
-@import 'components/singleFaitEnUn';
-@import 'components/singleHollowKnight';
-@import 'components/singlePortfolio';
-@import 'components/singlecora';
 @import 'components/video';
-@import 'components/modal';
 @import 'components/scrolly';
-@import 'components/404';
 @import 'components/loader';
+@import 'components/accueil';
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page

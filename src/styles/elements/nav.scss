@@ -1,18 +1,52 @@
 header {
 
-    nav {}
+    .navigationListe {
+        list-style-type: none;
 
-    .header-is-hidden.is-scrolling-down & {}
+    }
 }
 
 /* ==========================================================================
      NAVIGATION PRINCIPALE
      ========================================================================== */
 
-.navPrincipal {
+.navPrincipale {
+    position: fixed;
+    top: 0;
+    left: 12.3%;
 
-    img:nth-child(3) {}
+    .navigationListe {
 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        width: 0;
+        height: 100vh;
+
+        margin: 0;
+        padding: 0;
+
+
+        li {
+            transform: rotate(-90deg);
+            transform-origin: bottom center;
+
+            .activePage {
+                padding-bottom: var(--spacing-md);
+            }
+
+            a {
+                padding: var(--spacing-xs) var(--spacing-md);
+                border-radius: 10px 10px 0 0;
+
+                &:hover {
+                    padding-top: var(--spacing-sm);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
 }
 
 /* ==========================================================================

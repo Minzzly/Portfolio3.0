@@ -3,17 +3,11 @@
    ========================================================================== */
 
 h1,
-h2,
-h3,
-h4 {
-    color:var(--color-black);
+h2 {
+    color: var(--color-white);
     font-family: var(--font-primary);
-    font-weight:var(--fw-xbold);
-    text-align: center;
-    line-height: 1.1;
     margin: 0;
-
-    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 h1 {
@@ -34,7 +28,7 @@ h1 {
 
 h2 {
     font-size: var(--font-size-h2);
-    margin-top:var(--spacing-md);
+
     @media screen and (max-width: $breakpoint-sm) {
         font-size: var(--font-size-h2-responsive);
     }
@@ -42,15 +36,4 @@ h2 {
     @media screen and (max-width: $breakpoint-xs) {
         font-size: var(--font-size-h2-mobile);
     }
-}
-
-h3 {
-    font-size: var(--font-size-h3);
-        @media screen and (max-width: $breakpoint-sm) {
-            font-size: var(--font-size-h3-responsive);
-        }
-
-        @media screen and (max-width: $breakpoint-xs) {
-            font-size: var(--font-size-h3-mobile);
-        }
 }
