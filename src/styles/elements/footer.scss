@@ -15,14 +15,25 @@ footer {
         padding-left: var(--spacing-md);
 
         a {
-            color: var(--color-primary);
-            padding: 0 var(--spacing-xs);
+            color: var(--color-background-tertiary);
+            margin: 0 var(--spacing-xs);
+            background-color: var(--color-white);
+            border-radius: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             transition: all 0.3s ease-in-out;
 
             &:hover {
-                color: var(--color-white);
+                color: var(--color-background-quaternary);
 
                 transition: all 0.3s ease-in-out;
+            }
+
+            svg {
+                margin: auto;
             }
         }
     }

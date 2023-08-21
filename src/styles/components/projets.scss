@@ -38,7 +38,7 @@
 
                 &:hover {
                     img {
-                        filter: grayscale(0%);
+                        // filter: grayscale(0%);
                         transition: all 0.5s ease-in-out;
                         transform: scale(110%);
                     }
@@ -47,7 +47,7 @@
                 p {
                     margin: 0;
                     text-align: center;
-                    background-color: var(--color-quinary);
+                    background-color: var(--color-background-tertiary);
                     padding: var(--spacing-xs) 0;
 
 
@@ -57,7 +57,7 @@
                 }
 
                 img {
-                    filter: grayscale(100%);
+                    // filter: grayscale(100%);
                     transition: all 0.5s ease-in-out;
 
                     z-index: 1;

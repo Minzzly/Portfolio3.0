@@ -1,5 +1,5 @@
 button {
-    background-color: var(--color-quinary);
+    background-color: var(--color-background-tertiary);
     border: none;
     border-radius: var(--spacing-xs);
     padding: var(--spacing-sm);
@@ -7,7 +7,7 @@ button {
     color: var(--color-white);
 
     &:hover {
-        background-color: var(--color-background-secondary);
+        background-color: var(--color-background-quaternary);
         cursor: pointer;
 
         transition: all 0.3s ease-in-out;

@@ -15,10 +15,10 @@ export default class Carousel {
       ,
       breakpoints: {
         768: {
-          slidesPerView: 2,
+          slidesPerView: 1,
         },
         1440: {
-          slidesPerView: 3,
+          slidesPerView: 1,
         },
       },
       spaceBetween: 30,
@@ -57,7 +57,7 @@ export default class Carousel {
           slidesPerView: 1,
           breakpoints: {
             426: {
-              slidesPerView: 3,
+              slidesPerView: 1,
             },
           },
         },

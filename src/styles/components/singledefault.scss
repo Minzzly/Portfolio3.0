@@ -41,11 +41,26 @@
             }
         }
 
+        .sectionExplication {
+            .contenuProjet {
+                display: flex;
+                justify-content: space-around;
+                align-items: baseline;
+
+                p {
+                    width: 45%;
+                    margin: auto;
+                    text-align: justify;
+                }
+            }
+        }
+
         .contenuProjet {
+            width: 85%;
+            margin: auto;
             padding: var(--spacing-lg) 0;
 
             p {
-                width: 80%;
                 margin: auto;
                 text-align: justify;
             }
@@ -64,12 +79,12 @@
             .images {
                 display: flex;
                 justify-content: space-between;
-                width: 80%;
+                width: 40%;
                 margin: auto;
                 padding: var(--spacing-sm) 0;
 
                 img {
-                    width: 33%;
+                    width: 100%;
                 }
             }
 
