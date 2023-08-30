@@ -45,18 +45,18 @@
             .contenuProjet {
                 display: flex;
                 justify-content: space-around;
-                align-items: baseline;
+                // align-items: baseline;
 
                 p {
                     width: 45%;
-                    margin: auto;
+                    margin: 0;
                     text-align: justify;
                 }
             }
         }
 
         .contenuProjet {
-            width: 85%;
+            width: 80%;
             margin: auto;
             padding: var(--spacing-lg) 0;
 
@@ -72,6 +72,10 @@
             }
 
             img {
+                width: 530px;
+                height: 330px;
+                object-fit: cover;
+
                 cursor: pointer;
                 border-radius: var(--spacing-sm);
             }
