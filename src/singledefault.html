@@ -46,26 +46,44 @@
         </nav>
     </header>
     <div class="wrapper">
-        <h1>Nom Projet</h1> <!-- a changer -->
+        <!-- ==========================================================================
+                                    HERO
+        ==========================================================================-->
+        <div class="hero">
+            <img src="assets/images/projets/Thumbnail_FantomeGare.png" alt="">
+            <h1>Nom Projet</h1> <!-- a changer -->
+        </div>
+
 
         <!-- ==========================================================================
-                                RESUMÉ ET ROLES
+                                    RESUMÉ
         ==========================================================================-->
-        <section class="resumeRole">
-            <h2 class="Tier01_Padding">Résumé et roles</h2>
-            <div class="resumeRole_texte contenuProjet">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam finibus ipsum, vitae
-                    lobortis
-                    metus ultricies quis. Pellentesque lobortis lacinia quam et.
-                </p>
+        <section class="resume">
+            <h2 class="Tier01_Padding">Résumé du projet</h2>
+            <div class="resume_texte contenuProjet">
+                <div class="resume-explication">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam finibus ipsum, vitae
+                        lobortis
+                        metus ultricies quis. Pellentesque lobortis lacinia quam et.
+                    </p>
 
-                <ul>
-                    <li>Audrey Langlois : <i>selfneasfkjnef</i></li>
-                    <li>Audrey Langlois : <i>selfneasfkjnef</i></li>
-                    <li>Audrey Langlois : <i>selfneasfkjnef</i></li>
-                    <li>Audrey Langlois : <i>selfneasfkjnef</i></li>
-                </ul>
+                    <div class="logiciel-logo">
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-unrealengine"></use>
+                        </svg>
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-notion"></use>
+                        </svg>
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-audition"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <img src="assets/images/projets/Thumbnail_FantomeGare.png" class="thumbnail-single" alt=""
+                    data-component="Modal" data-modal-id="tpl-modal-images"
+                    data-modal-source="assets/images/projets/Thumbnail_FantomeGare.png">
             </div>
         </section>
 
@@ -116,6 +134,9 @@
                     </div>
 
                     <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </section>
@@ -128,7 +149,23 @@
             <h2 class="Tier03_Padding">Section 2</h2> <!-- a changer -->
 
             <div class="contenuProjet">
+                <p class="explication_paragraphe">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam finibus ipsum, vitae
+                    lobortis
+                    metus ultricies quis. Pellentesque lobortis lacinia quam et.
+                </p>
 
+                <div class="images">
+                    <img src="assets/images/projets/Thumbnail_FantomeGare.png" alt="" data-component="Modal"
+                        data-modal-id="tpl-modal-images"
+                        data-modal-source="assets/images/projets/Thumbnail_FantomeGare.png">
+                    <img src="assets/images/projets/Thumbnail_FantomeGare.png" alt="" data-component="Modal"
+                        data-modal-id="tpl-modal-images"
+                        data-modal-source="assets/images/projets/Thumbnail_FantomeGare.png">
+                    <img src="assets/images/projets/Thumbnail_FantomeGare.png" alt="" data-component="Modal"
+                        data-modal-id="tpl-modal-images"
+                        data-modal-source="assets/images/projets/Thumbnail_FantomeGare.png">
+                </div>
             </div>
 
         </section>
@@ -138,13 +175,42 @@
         ==========================================================================-->
 
         <section class="resultat">
-            <h2 class="Tier04_Padding">Résultat et apprentissage</h2>
+            <h2 class="Tier04_Padding">Crédit et résultat</h2>
 
             <div class="contenuProjet">
+                <div class="credits">
+                    <ul>
+                        <li>Audrey Langlois : <i>selfneasfkjnef</i></li>
+                        <li>Audrey Langlois : <i>selfneasfkjnef</i></li>
+                        <li>Audrey Langlois : <i>selfneasfkjnef</i></li>
+                        <li>Audrey Langlois : <i>selfneasfkjnef</i></li>
+                    </ul>
+                </div>
+                <a href="projets.html"><button>Jouer sur itch.io</button></a>
+            </div>
+        </section>
 
+        <!-- ==========================================================================
+                            PROCHAIN/PRECEDENT PROJET
+        ==========================================================================-->
+
+        <section class="autresprojets">
+            <div class="precedent autresprojets_arrow">
+                <svg class="icon icon--lg">
+                    <use xlink:href="#icon-arrow"></use>
+                </svg>
+                <p>Projet précédent</p> <!-- NOM A CHANGER -->
             </div>
 
+            <div class="prochain autresprojets_arrow">
+                <p>Prochain projet</p> <!-- NOM A CHANGER -->
+                <svg class="icon icon--lg">
+                    <use xlink:href="#icon-arrow"></use>
+                </svg>
+            </div>
         </section>
+
+
         <footer>
             <p class="copyright"> AudreyLanglois©2021</p>
             <div class="mediassociaux">

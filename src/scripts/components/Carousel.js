@@ -1,4 +1,5 @@
 import Swiper from 'swiper/bundle';
+// import Swiper, { Navigation, Pagination, Scrollbar } from 'swiper';
 
 /** Composante Carousel de Timtools */
 export default class Carousel {
@@ -10,25 +11,30 @@ export default class Carousel {
     this.element = element;
 
     // Options par défaut pour la librairie Swiper
-    this.defaultOptions = {
-      slidesPerView: 1
-      ,
-      breakpoints: {
-        768: {
-          slidesPerView: 1,
-        },
-        1440: {
-          slidesPerView: 1,
-        },
-      },
-      spaceBetween: 30,
-      loop: false,
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-      },
+    // this.defaultOptions = {
+    //   slidesPerView: 1
+    //   ,
+    //   breakpoints: {
+    //     768: {
+    //       slidesPerView: 1,
+    //     },
+    //     1440: {
+    //       slidesPerView: 1,
+    //     },
+    //   },
 
-    };
+    //   spaceBetween: 30,
+    //   loop: false,
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //     type: 'bullets',
+    //   },
+    //   navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    //   },
+
+    // };
 
     this.init();
   }
@@ -55,9 +61,18 @@ export default class Carousel {
         ...this.defaultOptions,
         ...{
           slidesPerView: 1,
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
           breakpoints: {
             426: {
-              slidesPerView: 1,
+              slidesPerView: 3,
+              spaceBetween: 20,
             },
           },
         },
