@@ -49,6 +49,7 @@
 
             width: 100%;
             text-align: center;
+            z-index: 1;
         }
 
         // ==========================================================================
@@ -147,8 +148,8 @@
 
             .autresprojets_arrow {
                 display: flex;
-                justify-content: center;
                 align-items: center;
+                color: var(--color-white);
             }
 
             .precedent {
@@ -157,8 +158,13 @@
                 }
             }
 
+            .prochain {
+                margin-left: auto;
+            }
+
             .autresprojets_disabled {
                 opacity: 0.2;
+                pointer-events: none;
             }
         }
     }
