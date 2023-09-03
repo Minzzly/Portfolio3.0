@@ -28,6 +28,7 @@
 @import 'elements/colorTiers';
 @import 'elements/button';
 @import 'elements/modal';
+@import 'elements/caroussels';
 
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
@@ -36,7 +37,6 @@
 @import '../../node_modules/swiper/components/pagination/pagination.scss';
 @import '../../node_modules/swiper/components/navigation/navigation.scss';
 
-@import 'components/caroussels';
 @import 'components/icons';
 @import 'components/video';
 @import 'components/scrolly';
