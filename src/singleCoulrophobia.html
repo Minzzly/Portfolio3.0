@@ -1,0 +1,266 @@
+<!-- ===================== COPY THIS TO MAKE A SINGLE ========================== -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+    <title>Audrey Langlois | Projet | À changer | Portfolio</title>
+
+
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fira+Sans:wght@400;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/jpg" href="./assets/images/Logo.png" />
+    <script src="scripts/main.js" defer></script>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LHCS1SRPG0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-LHCS1SRPG0");
+    </script>
+</head>
+
+<body class="projetPage">
+    <header>
+        <nav class="navPrincipale">
+            <ul class="navigationListe">
+                <li><a href="index.html" class="Tier01_Padding">Accueil</a></li>
+                <li><a href="projets.html" class="Tier02_Padding activePage">Projets</a></li>
+                <li><a href="gamejam.html" class="Tier03_Padding">GameJams</a></li>
+                <li><a href="contact.html" class="Tier04_Padding">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <!-- ==========================================================================
+                                    HERO
+        ==========================================================================-->
+        <div class="hero">
+            <img src="assets/images/projets/Thumbnail_Coulrophobia.png" alt="">
+            <h1>Coulrophobia</h1>
+        </div>
+
+
+        <!-- ==========================================================================
+                                    RESUMÉ
+        ==========================================================================-->
+        <section class="resume">
+            <h2 class="Tier01_Padding">Résumé du projet</h2>
+            <div class="resume_texte contenuProjet">
+                <div class="resume-explication">
+                    <p>
+                        Le but du projet était de faire une espérience sur la peur des clowns. Nous avons utilisé Unity
+                        pour ce projet et j'ai travailler sur l'intelligence artificiel du clown. À la fin, nous avons
+                        écrit un document avec nos procédures et nos recherches.
+                    </p>
+
+                    <div class="logiciel-logo">
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-unity"></use>
+                        </svg>
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-perforce"></use>
+                        </svg>
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-notion"></use>
+                        </svg>
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-googledocs"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <img src="assets/images/single/Coulrophobia/Gameplay_Coulrophobia.gif" class="thumbnail-single" alt=""
+                    data-component="Modal" data-modal-id="tpl-modal-images"
+                    data-modal-source="assets/images/single/Coulrophobia/Gameplay_Coulrophobia.gif">
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+                            SECTION 1
+        ==========================================================================-->
+
+        <section class="sectionExplication">
+            <h2 class="Tier02_Padding">La navigation du clown</h2> <!-- a changer -->
+
+            <div class="contenuProjet">
+                <p class="explication_paragraphe">
+                    Le clown se promène alléatoirement dans le niveau et place des ballons. Ces derniers sont un moyen
+                    de mettre un défi au joueur. Le clown a un raycast qui active lorsqu'il est proche du joueur. Si ce
+                    raycast touche le joueur, le clown va commencer à le chasser.
+                </p>
+
+                <div class="images">
+                    <img src="assets/images/single/Coulrophobia/RaycastViewport.png" alt="" data-component="Modal"
+                        data-modal-id="tpl-modal-images"
+                        data-modal-source="assets/images/single/Coulrophobia/RaycastViewport.png">
+                    <img src="assets/images/single/Coulrophobia/ScriptDetectionClown.png" alt="" data-component="Modal"
+                        data-modal-id="tpl-modal-images"
+                        data-modal-source="assets/images/single/Coulrophobia/ScriptDetectionClown.png">
+                    <img src="assets/images/single/Coulrophobia/Script_Navigation.png" alt="" data-component="Modal"
+                        data-modal-id="tpl-modal-images"
+                        data-modal-source="assets/images/single/Coulrophobia/Script_Navigation.png">
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+                            SECTION 2
+        ==========================================================================-->
+
+        <section class="sectionExplication">
+            <h2 class="Tier03_Padding">Les pouvoirs du clown</h2> <!-- a changer -->
+
+            <div class="contenuProjet">
+                <p class="explication_paragraphe">
+                    Après quelque seconde, le clown peut se téléporter derrière le joueur. Par contre, il ne peut que
+                    utiliser se pouvoir lorsqu'il ne se fait pas voir et lorsqu'il ne chasse pas le joueur. De plus, si
+                    ce dernier mets son dos sur le mur extérieur du niveau, le clown va detecter qu'il n'y a pas de
+                    place pour lui à naviguer et va choisir un endroit qu'il pourrait continuer à marcher.
+                </p>
+
+                <!-- ========================= CAROUSSEL SI NECESSAIRE ============================ -->
+                <div class="swiper-container" data-component="Carousel" data-carousel="default">
+                    <div class="swiper-wrapper">
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img src="assets/images/single/Coulrophobia/ScriptDetectionClown.png" alt=""
+                                data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/Coulrophobia/ScriptDetectionClown.png">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img src="assets/images/single/Coulrophobia/ScriptTeleportation.png" alt=""
+                                data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/Coulrophobia/ScriptTeleportation.png">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img src="assets/images/single/Coulrophobia/TeleportationClown.gif" alt=""
+                                data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/Coulrophobia/TeleportationClown.gif">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img src="assets/images/single/Coulrophobia/TeleportationMapClown.gif" alt=""
+                                data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/Coulrophobia/TeleportationMapClown.gif">
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ==========================================================================
+                            RÉSULTAT APPRENTISSAGE
+        ==========================================================================-->
+
+        <section class="resultat">
+            <h2 class="Tier04_Padding">Crédit et résultat</h2>
+
+            <div class="contenuProjet">
+                <div class="credits">
+                    <ul>
+                        <li>Audrey Langlois : <i>IA</i></li>
+                        <li>Mélodie Décary-Larocque : <i>Modélisation 3D</i></li>
+                        <li>Joé Boulet : <i>Intégration sonore et boucle de jeu</i></li>
+                    </ul>
+                </div>
+
+                <div class="multiplebuttons">
+                    <a href="assets/projectfiles/Coulrophobia/build 1.2.zip" target="_blank" download><button>Jouer le
+                            jeu</button></a>
+                    <a href="assets/pdf/Langlois,Décarie-Larocque, Boulet_DissertationCoulrophobie.pdf"
+                        target="_blank"><button>Lire la
+                            documentation</button></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+                            PROCHAIN/PRECEDENT PROJET
+        ==========================================================================-->
+
+        <section class="autresprojets">
+            <a href="singleBloom.html" class="precedent autresprojets_arrow">
+                <svg class="icon icon--lg">
+                    <use xlink:href="#icon-arrow"></use>
+                </svg>
+                <p>Project Bloom</p>
+            </a>
+
+            <a href="singleAnalyse.html" class="prochain autresprojets_arrow ">
+                <p>Analyse audiovisuelle d'In Sound Mind</p>
+                <svg class="icon icon--lg">
+                    <use xlink:href="#icon-arrow"></use>
+                </svg>
+            </a>
+        </section>
+
+
+        <footer>
+            <p class="copyright"> AudreyLanglois©2021</p>
+            <div class="mediassociaux">
+                <a href="https://www.youtube.com/channel/UC3BDgnqoChG4TBcuHe1_4vw" target="blank">
+                    <svg class="icon icon--md">
+                        <use xlink:href="#icon-youtube"></use>
+                    </svg>
+                    <div></div>
+                </a>
+                <a href="https://www.linkedin.com/in/audrey-langlois-9487b7220/" target="blank">
+                    <svg class="icon icon--md">
+                        <use xlink:href="#icon-linkedin"></use>
+                    </svg>
+                    <div></div>
+                </a>
+                <a href="https://sketchfab.com/AudreyLanglois" target="blank">
+                    <svg class="icon icon--md">
+                        <use xlink:href="#icon-sketchfab"></use>
+                    </svg>
+                    <div></div>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+
+    <div class="loader-wrapper" data-component="Loader">
+        <div class="loader-42"></div>
+        <div class="decorationLoader">
+        </div>
+    </div>
+
+    <template id="tpl-modal-images">
+        <div class="modal">
+            <div class="modal_scrim js-close"></div>
+            <div class="modal_box" id="contentModal">
+                <img src="{{source}}" alt="Image d'un logo" />
+            </div>
+        </div>
+    </template>
+</body>
+
+</html>

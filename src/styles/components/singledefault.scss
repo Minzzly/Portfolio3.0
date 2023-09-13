@@ -134,11 +134,19 @@
                 }
 
                 .credits,
-                a {
+                a,
+                .multiplebuttons {
                     width: 50%;
 
                     display: flex;
                     justify-content: center;
+                }
+
+                .multiplebuttons {
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 200px;
                 }
             }
         }
