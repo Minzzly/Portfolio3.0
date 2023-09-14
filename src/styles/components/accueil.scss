@@ -19,9 +19,11 @@
                 width: 40%;
 
                 border-radius: 0 0 0 100px;
+
+                @media screen and (max-width: $breakpoint-md) {
+                    border-radius: 0 0 0 50px;
+                }
             }
         }
-
-
     }
 }

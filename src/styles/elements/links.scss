@@ -8,4 +8,8 @@ a {
     text-decoration: none;
     font-size: var(--font-size-liens);
     color: var(--color-black);
+
+    @media screen and (max-width: $breakpoint-md) {
+        font-size: var(--font-size-content-responsive);
+    }
 }

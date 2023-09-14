@@ -4,21 +4,24 @@
 
 .navPrincipale {
     position: fixed;
-    top: 0;
+    top: 20%;
     left: 12.3%;
 
     .navigationListe {
         list-style-type: none;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
 
         width: 0;
-        height: 100vh;
+        height: 600px;
 
         margin: 0;
         padding: 0;
 
+        @media screen and (max-width: $breakpoint-md) {
+            height: 475px;
+        }
 
         li {
             transform: rotate(-90deg);
@@ -30,6 +33,7 @@
             }
 
             a {
+
                 padding: var(--spacing-xs) var(--spacing-md);
                 border-radius: 10px 10px 0 0;
                 background-color: var(--color-background-secondary);
@@ -39,6 +43,10 @@
                 &:hover {
                     padding-top: var(--spacing-sm);
                     transition: all 0.3s ease-in-out;
+                }
+
+                @media screen and (max-width: $breakpoint-md) {
+                    padding: var(--spacing-xs) var(--spacing-sm);
                 }
             }
         }
