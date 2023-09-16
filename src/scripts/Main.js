@@ -10,6 +10,7 @@ class Main {
     document.documentElement.classList.add('has-js');
 
     Icons.load();
+    // ImagesSingle.load();
 
     new ComponentFactory();
   }

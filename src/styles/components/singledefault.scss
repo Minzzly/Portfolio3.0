@@ -107,6 +107,10 @@
                 display: flex;
                 justify-content: space-between;
 
+                @media screen and (max-width: $breakpoint-lg) {
+                    display: none;
+                }
+
                 img {
                     width: 32%;
                 }
@@ -140,6 +144,12 @@
 
                     display: flex;
                     justify-content: center;
+                }
+
+                .credits {
+                    @media screen and (max-width: $breakpoint-lg) {
+                        width: 60%;
+                    }
                 }
 
                 .multiplebuttons {

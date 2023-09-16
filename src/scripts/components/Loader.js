@@ -36,7 +36,7 @@ export default class Loader {
     }
 
     enleveLoader() {
-        console.log(this.element.parentElement);
+        // console.log(this.element.parentElement);
         this.element.parentElement.removeChild(this.element);
     }
 }

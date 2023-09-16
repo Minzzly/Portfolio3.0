@@ -38,6 +38,10 @@
     .swiper-slide {
         height: 300px;
 
+        @media screen and (max-width: $breakpoint-lg) {
+            height: 300px;
+        }
+
         img {
             width: inherit;
             height: inherit;

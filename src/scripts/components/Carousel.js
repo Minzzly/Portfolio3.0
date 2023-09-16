@@ -70,8 +70,12 @@ export default class Carousel {
             prevEl: '.swiper-button-prev',
           },
           breakpoints: {
-            426: {
+            1441: {
               slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1025: {
+              slidesPerView: 2,
               spaceBetween: 20,
             },
           },
