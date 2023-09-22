@@ -51,10 +51,6 @@
         object-fit: scale-down;
 
         pointer-events: none;
-
-        @media screen and (max-width: 425px) {
-            object-fit: cover;
-        }
     }
 }
 

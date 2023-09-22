@@ -6,6 +6,10 @@
         color: var(--color-black);
         z-index: 2;
 
+        @media screen and (max-width: $breakpoint-xs) {
+            font-size: 0.7rem;
+        }
+
         &.Tier01_Padding::before,
         &.Tier02_Padding::before,
         &.Tier03_Padding::before,
@@ -28,6 +32,14 @@
             @media screen and (max-width: $breakpoint-md) {
                 height: var(--spacing-md);
             }
+
+            @media screen and (max-width: $breakpoint-md) {
+                height: var(--spacing-sm);
+            }
+
+            @media screen and (max-width: $breakpoint-xs) {
+                height: 15px;
+            }
         }
 
         &.Tier02_Padding::before {
@@ -40,6 +52,10 @@
 
         &.Tier04_Padding::before {
             width: 70%;
+
+            @media screen and (max-width: $breakpoint-xs) {
+                width: 72%;
+            }
         }
     }
 }

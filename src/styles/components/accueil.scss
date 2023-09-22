@@ -10,9 +10,29 @@
             align-items: center;
             justify-content: center;
 
+            position: relative;
+
+            @media screen and (max-width: $breakpoint-sm) {
+                flex-direction: column-reverse;
+                margin-left: 10vw;
+            }
+
             .aPropos {
                 padding-right: var(--spacing-lg);
                 text-align: justify;
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    margin-left: -15vw;
+                    margin-top: -10vh;
+                    width: 70%;
+                    z-index: 2;
+                }
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    width: 100%;
+                    margin-top: -8vh;
+                    margin-left: 0;
+                }
             }
 
             .photoAudrey {
@@ -22,6 +42,16 @@
 
                 @media screen and (max-width: $breakpoint-md) {
                     border-radius: 0 0 0 50px;
+                }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 50%;
+                    margin-left: 15vw;
+                }
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    width: 55%;
+                    margin-left: 28vw;
                 }
             }
         }

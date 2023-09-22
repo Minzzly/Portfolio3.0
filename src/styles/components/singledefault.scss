@@ -125,6 +125,10 @@
                 justify-content: center;
                 align-items: center;
 
+                @media screen and (max-width: $breakpoint-sm) {
+                    flex-direction: column;
+                }
+
                 ul {
                     list-style-type: none;
                     margin: 0;
@@ -132,8 +136,16 @@
 
                     line-height: 35px;
 
+                    @media screen and (max-width: $breakpoint-sm) {
+                        margin-bottom: var(--spacing-md);
+                    }
+
                     i {
                         font-size: var(--font-size-liens);
+
+                        @media screen and (max-width: $breakpoint-sm) {
+                            font-size: 1rem;
+                        }
                     }
                 }
 
@@ -149,6 +161,10 @@
                 .credits {
                     @media screen and (max-width: $breakpoint-lg) {
                         width: 60%;
+                    }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        width: 100%;
                     }
                 }
 
@@ -167,6 +183,10 @@
 
             display: flex;
             justify-content: space-between;
+
+            @media screen and (max-width: $breakpoint-xs) {
+                padding-bottom: 3vh;
+            }
 
             .autresprojets_arrow {
                 display: flex;

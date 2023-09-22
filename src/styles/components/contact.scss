@@ -29,6 +29,14 @@
                 width: 80%;
             }
 
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 100%;
+            }
+
+            @media screen and (max-width: $breakpoint-xs) {
+                width: 110%;
+            }
+
         }
     }
 }
