@@ -159,6 +159,29 @@
                 }
 
                 .credits {
+                    ul {
+                        li {
+                            a {
+                                text-decoration: underline;
+                                color: var(--color-white);
+                                text-align: left;
+
+                                display: inline;
+                                margin: 0;
+
+                                width: 100%;
+
+                                transition: all ease-in-out 0.3s;
+
+                                &:hover {
+                                    color: var(--color-background-tertiary);
+                                    transition: all ease-in-out 0.3s;
+                                }
+                            }
+                        }
+                    }
+
+
                     @media screen and (max-width: $breakpoint-lg) {
                         width: 60%;
                     }

@@ -17,3 +17,25 @@ button {
         padding: 10px 15px;
     }
 }
+
+.CtaContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 15vh;
+
+    button {
+        opacity: 0.6;
+
+        &:hover {
+            opacity: 1;
+            background-color: var(--color-background-tertiary);
+        }
+    }
+
+    a {
+        font-size: var(--font-size-content-responsive);
+    }
+}
