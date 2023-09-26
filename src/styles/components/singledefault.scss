@@ -152,10 +152,14 @@
                 .credits,
                 a,
                 .multiplebuttons {
-                    width: 50%;
+                    width: 40%;
 
                     display: flex;
                     justify-content: center;
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        width: 50%;
+                    }
                 }
 
                 .credits {
@@ -178,12 +182,29 @@
                                     transition: all ease-in-out 0.3s;
                                 }
                             }
+
+                            i {
+                                font-size: var(--font-size-content);
+
+                                @media screen and (max-width: $breakpoint-lg) {
+                                    font-size: var(--font-size-content-responsive);
+                                }
+
+                                @media screen and (max-width: $breakpoint-md) {
+                                    font-size: var(--font-size-h2-mobile);
+                                }
+
+                            }
                         }
                     }
 
 
                     @media screen and (max-width: $breakpoint-lg) {
                         width: 60%;
+                    }
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        width: 80%;
                     }
 
                     @media screen and (max-width: $breakpoint-sm) {
