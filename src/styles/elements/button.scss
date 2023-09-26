@@ -24,10 +24,11 @@ button {
     align-items: center;
     justify-content: space-between;
 
-    height: 15vh;
+    max-height: 15vh;
 
     button {
         opacity: 0.6;
+        margin-top: var(--spacing-sm);
 
         &:hover {
             opacity: 1;
@@ -37,5 +38,11 @@ button {
 
     a {
         font-size: var(--font-size-content-responsive);
+
+        @media screen and (max-width: $breakpoint-sm) {
+            font-size: var(--font-size-content-mobile);
+        }
     }
+
+
 }

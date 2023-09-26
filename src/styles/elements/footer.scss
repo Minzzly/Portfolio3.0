@@ -13,6 +13,9 @@ footer {
 
     @media screen and (max-width: $breakpoint-xs) {
         height: 4vh;
+        position: fixed;
+        background-color: var(--color-black);
+        z-index: 999;
     }
 
     .mediassociaux {

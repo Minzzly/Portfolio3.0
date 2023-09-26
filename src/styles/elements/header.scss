@@ -14,4 +14,8 @@
     p {
         font-size: var(--font-size-content-mobile);
     }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        display: none;
+    }
 }
