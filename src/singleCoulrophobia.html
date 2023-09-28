@@ -88,9 +88,11 @@
             <div class="resume_texte contenuProjet">
                 <div class="resume-explication">
                     <p>
-                        Le but du projet était de faire une espérience sur la peur des clowns. Nous avons utilisé Unity
-                        pour ce projet et j'ai travailler sur l'intelligence artificiel du clown. À la fin, nous avons
-                        écrit un document avec nos procédures et nos recherches.
+                        Le but du projet était de faire une expérience sur la peur des clowns. Nous avons utilisé Unity
+                        pour ce projet et j'ai travailler sur l'intelligence artificiel du clown. Le clown avait la
+                        capacité de téléporter derrière le joueur, mais seulement à des moments précis pour que le
+                        joueur ne sait jamais il est ou. À la fin, nous avons écrit un document avec nos procédures et
+                        nos recherches.
                     </p>
 
                     <div class="logiciel-logo">
@@ -124,9 +126,12 @@
 
             <div class="contenuProjet">
                 <p class="explication_paragraphe">
-                    Le clown se promène alléatoirement dans le niveau et place des ballons. Ces derniers sont un moyen
-                    de mettre un défi au joueur. Le clown a un raycast qui active lorsqu'il est proche du joueur. Si ce
-                    raycast touche le joueur, le clown va commencer à le chasser.
+                    Le déplacement du clown est assez simple, il prend un point aléatoire dans le niveau et grâce au
+                    Pathfinding de Unity, il trouve le chemin le plus rapide vers ce point. Le clown a un raycast qui
+                    pointe vers le joueur quand il est assez proche. Si ce raycast fini par detecter le joueur, le clown
+                    va commencer à chasser le joueur. C'est à dire que son point de déplacement est changer pour les
+                    coordonnées du joueur. De plus, le clown peut aléatoirement mettre des ballon sur son chemin pour
+                    ralentir le joueur.
                 </p>
 
                 <div class="images">
