@@ -2,22 +2,26 @@
     .wrapper {
         .presentation {
             width: 80%;
-            height: 90vh;
+            // height: 90vh;
             margin: auto;
-            overflow-y: hidden;
 
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
 
             position: relative;
+            padding: var(--spacing-xl) 0;
+
+            @media screen and (max-width: $breakpoint-md) {
+                height: 100%;
+            }
 
             @media screen and (max-width: $breakpoint-sm) {
                 flex-direction: column-reverse;
-                margin-left: 10vw;
+                align-items: center;
+
                 height: 100%;
 
-                padding: var(--spacing-sm) 0 70px 0;
             }
 
             @media screen and (max-width: $breakpoint-xs) {
@@ -31,15 +35,10 @@
 
                 @media screen and (max-width: $breakpoint-sm) {
                     padding: var(--spacing-sm);
-                    margin-top: -20vh;
-                    margin-right: auto;
                     width: 80%;
                     z-index: 2;
 
-                    background-color: rgba($color: #000000, $alpha: 0.7);
                     border-radius: 10px;
-
-
                 }
 
                 @media screen and (max-width: $breakpoint-xs) {
@@ -66,9 +65,6 @@
 
                 @media screen and (max-width: $breakpoint-sm) {
                     width: 60%;
-                    margin-left: 18vw;
-
-                    opacity: 0.8;
                 }
 
                 @media screen and (max-width: $breakpoint-xs) {
