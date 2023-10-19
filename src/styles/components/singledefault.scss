@@ -67,7 +67,9 @@
                     .logiciel-logo {
                         margin-top: var(--spacing-sm);
 
-                        svg {
+                        div {
+                            display: inline;
+                            width: 10%;
                             margin: 0 var(--spacing-xs);
                         }
                     }

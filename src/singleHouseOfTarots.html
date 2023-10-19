@@ -1,0 +1,471 @@
+<!-- ===================== COPY THIS TO MAKE A SINGLE ========================== -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+    <title>Audrey Langlois | Projet | À changer | Portfolio</title>
+
+
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Linden+Hill:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/jpg" href="./assets/images/Logo.png" />
+    <script src="scripts/main.js" defer></script>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LHCS1SRPG0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-LHCS1SRPG0");
+    </script>
+</head>
+
+<body class="projetPage">
+    <header>
+        <nav class="navPrincipale">
+            <ul class="navigationListe">
+                <li><a href="index.html" class="Tier01_Padding">Accueil</a></li>
+                <li><a href="projets.html" class="Tier02_Padding activePage">Projets</a></li>
+                <li><a href="gamejam.html" class="Tier03_Padding">GameJams</a></li>
+            </ul>
+        </nav>
+
+        <nav class="navMobile">
+            <ul class="navigationListe">
+                <li><a href="index.html" class="Tier01_Padding activePage"><svg class="icon icon--lg">
+                            <use xlink:href="#icon-accueil"></use>
+                        </svg></a></li>
+                <li><a href="projets.html" class="Tier02_Padding"><svg class="icon icon--lg">
+                            <use xlink:href="#icon-projets"></use>
+                        </svg></a></li>
+                <li><a href="gamejam.html" class="Tier03_Padding"><svg class="icon icon--lg">
+                            <use xlink:href="#icon-gamejam"></use>
+                        </svg></a></li>
+                <li><a href="contact.html" class="Tier04_Padding"><svg class="icon icon--lg">
+                            <use xlink:href="#icon-contact"></use>
+                        </svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <div class="header">
+            <h2>Audrey Langlois</h2>
+            <p><i>Développement de jeux vidéo</i></p>
+
+            <div class="CtaContact">
+                <a href="mailto:azpmaggie@gmail.com"><button>Adresse courriel</button></a>
+                <a href="assets/pdf/CV_Audrey_Langlois_2023.pdf" target="_blank"><button>CV</button></a>
+            </div>
+        </div>
+        <!-- ==========================================================================
+                                    HERO
+        ==========================================================================-->
+        <div class="hero">
+            <img decoding="async" loading="lazy" src="assets/images/projets/Thumbnail_HouseOfTarots.jpg" alt="">
+            <h1>House Of Tarots</h1>
+        </div>
+
+
+        <!-- ==========================================================================
+                                    RESUMÉ
+        ==========================================================================-->
+        <section class="resume">
+            <h2 class="Tier01_Padding">Résumé du projet</h2>
+            <div class="resume_texte contenuProjet">
+                <div class="resume-explication">
+                    <p>
+                        Dans ce projet, mon but était de réussir un design de niveau dans Unreal Engine. J'ai donc créé
+                        une maison dans un contexte de jeu d'horreur. En premier, j'ai cherché de l'inspiration vers
+                        d'autres jeux et j'ai trouvé une idée qui me plait. Ensuite, j'ai fait du design de niveau et un
+                        blocking de niveau. Pour terminer, j'ai intégré une mécanique avec une caméra, des objets à
+                        collectionner et une intelligence artificielle.
+                    </p>
+
+                    <div class="logiciel-logo">
+                        <div title="Unreal Engine">
+                            <svg class="icon icon--lg">
+                                <use xlink:href="#icon-unrealengine"></use>
+                            </svg>
+                        </div>
+
+                        <div title="Notion">
+                            <svg class="icon icon--lg">
+                                <use title="Notion" xlink:href="#icon-notion"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <img decoding="async" loading="lazy" src="assets/images/projets/Thumbnail_HouseOfTarots.jpg"
+                    class="thumbnail-single" alt="" data-component="Modal" data-modal-id="tpl-modal-images"
+                    data-modal-source="assets/images/projets/Thumbnail_HouseOfTarots.jpg">
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+                            SECTION 1
+        ==========================================================================-->
+
+        <section class="sectionExplication">
+            <h2 class="Tier02_Padding">Inspirations</h2>
+
+            <div class="contenuProjet">
+                <p class="explication_paragraphe">
+                    J'adore les jeux d'horreurs et leur complexité. J'ai donc eu l'idée de faire une maison qui
+                    appartenait à une voyante et de m'inspirer des cartes de tarot. Premièrement, j'ai pigé trois cartes
+                    ; Ace Of Wands, Knight of Swords et The Star. Ces trois cartes me donnent une base sur le
+                    comportement de mon intelligence artificielle. Avec un peu de recherche sur la signification de mes
+                    cartes, j'ai décidé de créer une créature agressive qui attaque rapidement et qui place des pièges.
+                </p>
+
+                <!-- ========================= CAROUSSEL SI NECESSAIRE ============================ -->
+                <div class="swiper-container" data-component="Carousel" data-carousel="default">
+                    <div class="swiper-wrapper">
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy"
+                                src="assets/images/single/HouseOfTarots/CartesDeTarots.jpg" alt=""
+                                data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/CartesDeTarots.jpg">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy" src="assets/images/single/HouseOfTarots/AceOfWands.jpg"
+                                alt="" data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/AceOfWands.jpg">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy"
+                                src="assets/images/single/HouseOfTarots/KnightOfSword.jpg" alt="" data-component="Modal"
+                                data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/KnightOfSword.jpg">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy" src="assets/images/single/HouseOfTarots/TheStar.jpg"
+                                alt="" data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/TheStar.jpg">
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+                            SECTION 2
+        ==========================================================================-->
+
+        <section class="sectionExplication">
+            <h2 class="Tier03_Padding">Design de niveau</h2>
+
+            <div class="contenuProjet">
+                <p class="explication_paragraphe">
+                    Pour le schéma de la maison, je me suis inspiré des jeux comme Visage, Resident Evil 7 : Biohazard
+                    et Phasmophobia. Un des plus gros défis était d'avoir des pièces qui ont des formes intéressant,
+                    mais qui donne l'impression que c'est une maison normale au premier coup d'œil. Quand mon plan 2D
+                    était terminé, je suis passé au blocking de niveau. J'ai réalisé rapidement au début que j'avais des
+                    pièces trop petites pour un jeu qui va avoir un monstre qui te chasse. J'ai donc agrandi les pièces
+                    pour laisser de l'espace au joueur de bouger.
+                </p>
+
+                <!-- ========================= CAROUSSEL SI NECESSAIRE ============================ -->
+                <div class="swiper-container" data-component="Carousel" data-carousel="default">
+                    <div class="swiper-wrapper">
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy"
+                                src="assets/images/single/HouseOfTarots/L0_Legendes.jpg" alt="" data-component="Modal"
+                                data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/L0_Legendes.jpg">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy"
+                                src="assets/images/single/HouseOfTarots/L0_Floor1_NoIcones.jpg" alt=""
+                                data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/L0_Floor1_NoIcones.jpg">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy"
+                                src="assets/images/single/HouseOfTarots/L0_Floor2_NoIcones.jpg" alt=""
+                                data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/L0_Floor2_NoIcones.jpg">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy"
+                                src="assets/images/single/HouseOfTarots/L0_Floor1_Icones.jpg" alt=""
+                                data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/L0_Floor1_Icones.jpg">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy"
+                                src="assets/images/single/HouseOfTarots/L0_Floor2_Icones.jpg" alt=""
+                                data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/L0_Floor2_Icones.jpg">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy" src="assets/images/single/HouseOfTarots/Hallway.jpg"
+                                alt="" data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/Hallway.jpg">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy" src="assets/images/single/HouseOfTarots/Bathroom.jpg"
+                                alt="" data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/Bathroom.jpg">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy" src="assets/images/single/HouseOfTarots/salon.jpg"
+                                alt="" data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/salon.jpg">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy" src="assets/images/single/HouseOfTarots/Study.jpg"
+                                alt="" data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/Study.jpg">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy"
+                                src="assets/images/single/HouseOfTarots/Tutoriel_Cam.webp" alt="" data-component="Modal"
+                                data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/Tutoriel_Cam.webp">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy" src="assets/images/single/HouseOfTarots/TVDemo.webp"
+                                alt="" data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/TVDemo.webp">
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+                            SECTION 3
+        ==========================================================================-->
+
+        <section class="sectionExplication">
+            <h2 class="Tier04_Padding">L'IA</h2>
+
+            <div class="contenuProjet">
+                <p class="explication_paragraphe">
+                    Finalement, il est venu le temps de mettre mes mécaniques pour ma créature. J'ai tenté de créer un
+                    niveau avec de la tension entre le joueur et le monstre, donc chaque coin qui est tourné, la
+                    créature pourrait être là pour t'attendre. À cause que mon intelligence artificielle est agressive,
+                    le moment qu'il voit le joueur, il va lui chasser. Par contre, pour avoir un peu de balances, le
+                    joueur est équipé avec une caméra flash pour que le monstre disparaisse.
+                </p>
+
+                <!-- ========================= CAROUSSEL SI NECESSAIRE ============================ -->
+                <div class="swiper-container" data-component="Carousel" data-carousel="default">
+                    <div class="swiper-wrapper">
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy"
+                                src="assets/images/single/HouseOfTarots/BP_AI_Moveto.jpg" alt="" data-component="Modal"
+                                data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/BP_AI_Moveto.jpg">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy"
+                                src="assets/images/single/HouseOfTarots/BP_DetectionJoueur_1.jpg" alt=""
+                                data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/BP_DetectionJoueur_1.jpg">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy"
+                                src="assets/images/single/HouseOfTarots/BP_DetectionJoueur_2.jpg" alt=""
+                                data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/BP_DetectionJoueur_2.jpg">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy"
+                                src="assets/images/single/HouseOfTarots/BP_RetreatMonstre.jpg" alt=""
+                                data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/BP_RetreatMonstre.jpg">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy"
+                                src="assets/images/single/HouseOfTarots/BP_SpawnMonstre_1.jpg" alt=""
+                                data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/BP_SpawnMonstre_1.jpg">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy"
+                                src="assets/images/single/HouseOfTarots/BP_SpawnMonstre_2.jpg" alt=""
+                                data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/BP_SpawnMonstre_2.jpg">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy"
+                                src="assets/images/single/HouseOfTarots/HallwayMonster.jpg" alt=""
+                                data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/HallwayMonster.jpg">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy" src="assets/images/single/HouseOfTarots/TrapDemo.webp"
+                                alt="" data-component="Modal" data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/TrapDemo.webp">
+                        </div>
+
+                        <!-- ======= SLIDE ======= -->
+                        <div class="swiper-slide">
+                            <img decoding="async" loading="lazy"
+                                src="assets/images/single/HouseOfTarots/MonsterDemo.webp" alt="" data-component="Modal"
+                                data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/single/HouseOfTarots/MonsterDemo.webp">
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ==========================================================================
+                            RÉSULTAT APPRENTISSAGE
+        ==========================================================================-->
+
+        <section class="resultat">
+            <h2 class="Tier03_Padding">Crédit et résultat</h2>
+
+            <div class="contenuProjet">
+                <div class="credits">
+                    <ul>
+                        <li><a href="index.html">Audrey Langlois</a> : <i>IA et Design de niveau</i></li>
+                    </ul>
+                </div>
+                <a href="assets/projectfiles/HouseOfTarots/build_HouseOfTarots.zip" target="_blank"
+                    download><button>Jouer le
+                        niveau</button></a>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+                            PROCHAIN/PRECEDENT PROJET
+        ==========================================================================-->
+
+        <section class="autresprojets">
+            <a href="" class="precedent autresprojets_arrow">
+                <svg class="icon icon--lg">
+                    <use xlink:href="#icon-arrow"></use>
+                </svg>
+                <p>Projet précédent</p> <!-- NOM A CHANGER -->
+            </a>
+
+            <a href="" class="prochain autresprojets_arrow">
+                <p>Prochain projet</p> <!-- NOM A CHANGER -->
+                <svg class="icon icon--lg">
+                    <use xlink:href="#icon-arrow"></use>
+                </svg>
+            </a>
+        </section>
+
+
+        <footer>
+            <p class="copyright"> AudreyLanglois©2023</p>
+            <div class="mediassociaux">
+                <a href="https://www.youtube.com/channel/UC3BDgnqoChG4TBcuHe1_4vw" target="blank">
+                    <svg class="icon icon--md">
+                        <use xlink:href="#icon-youtube"></use>
+                    </svg>
+                    <div></div>
+                </a>
+                <a href="https://www.linkedin.com/in/audrey-langlois-9487b7220/" target="blank">
+                    <svg class="icon icon--md">
+                        <use xlink:href="#icon-linkedin"></use>
+                    </svg>
+                    <div></div>
+                </a>
+                <a href="https://sketchfab.com/AudreyLanglois" target="blank">
+                    <svg class="icon icon--md">
+                        <use xlink:href="#icon-sketchfab"></use>
+                    </svg>
+                    <div></div>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+
+    <div class="loader-wrapper" data-component="Loader">
+        <div class="loader-42"></div>
+        <div class="decorationLoader">
+        </div>
+    </div>
+
+    <template id="tpl-modal-images">
+        <div class="modal">
+            <div class="modal_scrim js-close"></div>
+            <div class="modal_box" id="contentModal">
+                <img decoding="async" loading="lazy" src="{{source}}" alt="Image d'un logo" />
+            </div>
+        </div>
+    </template>
+</body>
+
+</html>
