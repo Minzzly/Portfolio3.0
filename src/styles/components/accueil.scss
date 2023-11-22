@@ -32,6 +32,7 @@
             .aPropos {
                 padding-right: var(--spacing-lg);
                 text-align: justify;
+                width: 60%;
 
                 @media screen and (max-width: $breakpoint-sm) {
                     padding: var(--spacing-sm);
